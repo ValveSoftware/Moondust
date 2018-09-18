@@ -12123,6 +12123,16 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 88.506004
       objectReference: {fileID: 0}
+    - target: {fileID: 20141739544524982, guid: 598a24a6220125440ba1d1d17fb0d717,
+        type: 2}
+      propertyPath: near clip plane
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 20141739544524982, guid: 598a24a6220125440ba1d1d17fb0d717,
+        type: 2}
+      propertyPath: far clip plane
+      value: 2000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 598a24a6220125440ba1d1d17fb0d717, type: 2}
   m_IsPrefabAsset: 0
