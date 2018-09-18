@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Substance>
+  <Graphs>
+    <Graph>
+      <Name>concrete_044</Name>
+      <PrototypeName>concrete_044</PrototypeName>
+      <PrototypeIndex>0</PrototypeIndex>
+      <Preset> &lt;sbspreset pkgurl="pkg://concrete_044/concrete_044" description="Exported from Unity" label="unity"&gt;
+ &lt;presetinput identifier="$outputsize" uid="3741626572" type="8" value="11,11"/&gt;
+ &lt;presetinput identifier="$randomseed" uid="2289477278" type="4" value="0"/&gt;
+ &lt;presetinput identifier="diffuse" uid="2918411053" type="4" value="0"/&gt;
+ &lt;presetinput identifier="basecolor" uid="2745903614" type="4" value="1"/&gt;
+ &lt;presetinput identifier="normal" uid="2745903608" type="4" value="1"/&gt;
+ &lt;presetinput identifier="specular" uid="2918411052" type="4" value="0"/&gt;
+ &lt;presetinput identifier="glossiness" uid="2918411055" type="4" value="0"/&gt;
+ &lt;presetinput identifier="roughness" uid="2745903605" type="4" value="1"/&gt;
+ &lt;presetinput identifier="metallic" uid="2745903607" type="4" value="1"/&gt;
+ &lt;presetinput identifier="ambient_occlusion" uid="2745903606" type="4" value="0"/&gt;
+ &lt;presetinput identifier="height" uid="2745903601" type="4" value="0"/&gt;
+ &lt;presetinput identifier="luminosity" uid="3663202679" type="0" value="0.500000"/&gt;
+ &lt;presetinput identifier="contrast" uid="2784919628" type="0" value="0.000000"/&gt;
+ &lt;presetinput identifier="hue_shift" uid="3663202565" type="0" value="0.000000"/&gt;
+ &lt;presetinput identifier="saturation" uid="3663202658" type="0" value="0.500000"/&gt;
+ &lt;presetinput identifier="normal_intensity" uid="3663328790" type="0" value="0.500000"/&gt;
+ &lt;presetinput identifier="normal_format" uid="2746129149" type="4" value="0"/&gt;
+ &lt;presetinput identifier="ao_spreading" uid="2746129151" type="0" value="0.500000"/&gt;
+ &lt;presetinput identifier="height_range" uid="2726245352" type="0" value="0.100000"/&gt;
+ &lt;presetinput identifier="height_position" uid="2726245350" type="0" value="0.500000"/&gt;
+ &lt;presetinput identifier="cracks" uid="2784938737" type="0" value="0.418000"/&gt;
+ &lt;presetinput identifier="dirtiness" uid="2784939302" type="0" value="0.299000"/&gt;
+ &lt;presetinput identifier="dirtiness_01_color" uid="2784938742" type="2" value="0.610294,0.614782,0.614782"/&gt;
+ &lt;presetinput identifier="dirtiness_02_color" uid="2784951194" type="2" value="0.433824,0.429061,0.414684"/&gt;
+ &lt;presetinput identifier="concrete_color" uid="2784938740" type="2" value="0.867647,0.867647,0.867647"/&gt;
+ &lt;/sbspreset&gt;
+</Preset>
+      <FileID>270326651</FileID>
+      <GUID>f74e1960980d881458d18b12999e976f</GUID>
+      <TargetSetting>
+        <BuildTarget>Default</BuildTarget>
+        <TextureWidth>512</TextureWidth>
+        <TextureHeight>512</TextureHeight>
+        <TextureFormat>0</TextureFormat>
+        <LoadingBehavior>1</LoadingBehavior>
+      </TargetSetting>
+      <TargetSetting>
+        <BuildTarget>Standalone</BuildTarget>
+        <TextureWidth>2048</TextureWidth>
+        <TextureHeight>2048</TextureHeight>
+        <TextureFormat>0</TextureFormat>
+        <LoadingBehavior>3</LoadingBehavior>
+      </TargetSetting>
+    </Graph>
+  </Graphs>
+</Substance>

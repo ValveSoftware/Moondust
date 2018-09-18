@@ -1,0 +1,183 @@
+fileFormatVersion: 2
+guid: b07d5fb535b98c74b8da7f849503f297
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: finger_index_0_r
+    100002: finger_index_1_r
+    100004: finger_index_2_r
+    100006: finger_index_meta_r
+    100008: finger_index_r_aux
+    100010: finger_index_r_aux_end
+    100012: finger_index_r_end
+    100014: finger_index_r_end_end
+    100016: finger_middle_0_r
+    100018: finger_middle_1_r
+    100020: finger_middle_2_r
+    100022: finger_middle_meta_r
+    100024: finger_middle_r_aux
+    100026: finger_middle_r_aux_end
+    100028: finger_middle_r_end
+    100030: finger_middle_r_end_end
+    100032: finger_pinky_0_r
+    100034: finger_pinky_1_r
+    100036: finger_pinky_2_r
+    100038: finger_pinky_meta_r
+    100040: finger_pinky_r_aux
+    100042: finger_pinky_r_aux_end
+    100044: finger_pinky_r_end
+    100046: finger_pinky_r_end_end
+    100048: finger_ring_0_r
+    100050: finger_ring_1_r
+    100052: finger_ring_2_r
+    100054: finger_ring_meta_r
+    100056: finger_ring_r_aux
+    100058: finger_ring_r_aux_end
+    100060: finger_ring_r_end
+    100062: finger_ring_r_end_end
+    100064: finger_thumb_0_r
+    100066: finger_thumb_1_r
+    100068: finger_thumb_2_r
+    100070: finger_thumb_r_aux
+    100072: finger_thumb_r_aux_end
+    100074: finger_thumb_r_end
+    100076: finger_thumb_r_end_end
+    100078: roboGlove
+    100080: //RootNode
+    100082: Root
+    100084: wrist_r
+    400000: finger_index_0_r
+    400002: finger_index_1_r
+    400004: finger_index_2_r
+    400006: finger_index_meta_r
+    400008: finger_index_r_aux
+    400010: finger_index_r_aux_end
+    400012: finger_index_r_end
+    400014: finger_index_r_end_end
+    400016: finger_middle_0_r
+    400018: finger_middle_1_r
+    400020: finger_middle_2_r
+    400022: finger_middle_meta_r
+    400024: finger_middle_r_aux
+    400026: finger_middle_r_aux_end
+    400028: finger_middle_r_end
+    400030: finger_middle_r_end_end
+    400032: finger_pinky_0_r
+    400034: finger_pinky_1_r
+    400036: finger_pinky_2_r
+    400038: finger_pinky_meta_r
+    400040: finger_pinky_r_aux
+    400042: finger_pinky_r_aux_end
+    400044: finger_pinky_r_end
+    400046: finger_pinky_r_end_end
+    400048: finger_ring_0_r
+    400050: finger_ring_1_r
+    400052: finger_ring_2_r
+    400054: finger_ring_meta_r
+    400056: finger_ring_r_aux
+    400058: finger_ring_r_aux_end
+    400060: finger_ring_r_end
+    400062: finger_ring_r_end_end
+    400064: finger_thumb_0_r
+    400066: finger_thumb_1_r
+    400068: finger_thumb_2_r
+    400070: finger_thumb_r_aux
+    400072: finger_thumb_r_aux_end
+    400074: finger_thumb_r_end
+    400076: finger_thumb_r_end_end
+    400078: roboGlove
+    400080: //RootNode
+    400082: Root
+    400084: wrist_r
+    2100000: roboSkeleton
+    4300000: roboGlove
+    9500000: //RootNode
+    13700000: roboGlove
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roboSkeleton
+    second: {fileID: 2100000, guid: 0dcd431c5da4e2c4e9ac7d6db93236d1, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

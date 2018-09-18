@@ -1,0 +1,444 @@
+{
+   "app_key" : "moondust.exe",
+   "bindings" : {
+      "/actions/buggybuddy" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/buggybuddy/in/turbo"
+                  },
+                  "position" : {
+                     "output" : "/actions/buggybuddy/in/Steer"
+                  }
+               },
+               "mode" : "joystick",
+               "path" : "/user/hand/left/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/buggybuddy/in/turbo"
+                  },
+                  "position" : {
+                     "output" : "/actions/buggybuddy/in/Steer"
+                  }
+               },
+               "mode" : "joystick",
+               "path" : "/user/hand/right/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/buggybuddy/in/Throttle"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/buggybuddy/in/Throttle"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/buggybuddy/in/Brake"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/a"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/buggybuddy/in/Brake"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/a"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/buggybuddy/in/Reset"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/b"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/buggybuddy/in/Reset"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/b"
+            }
+         ]
+      },
+      "/actions/teleporting" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/teleporting/in/Teleport"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/teleporting/in/Teleport"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/trackpad"
+            }
+         ]
+      },
+      "/actions/default" : {
+         "chords" : [],
+         "haptics" : [
+            {
+               "output" : "/actions/default/out/haptic",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/default/out/haptic",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses" : [
+            {
+               "output" : "/actions/default/in/pose",
+               "path" : "/user/hand/left/pose/raw"
+            },
+            {
+               "output" : "/actions/default/in/pose",
+               "path" : "/user/hand/right/pose/raw"
+            }
+         ],
+         "skeleton" : [
+            {
+               "output" : "/actions/default/in/skeletonlefthand",
+               "path" : "/user/hand/left/input/skeleton/left"
+            },
+            {
+               "output" : "/actions/default/in/skeletonrighthand",
+               "path" : "/user/hand/right/input/skeleton/right"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {
+                  "grab" : {
+                     "output" : "/actions/default/in/grabgrip"
+                  }
+               },
+               "mode" : "grab",
+               "parameters" : {
+                  "force_hold_threshold" : "0.02",
+                  "force_release_threshold" : "0.01"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "grab" : {
+                     "output" : "/actions/default/in/grabgrip"
+                  }
+               },
+               "mode" : "grab",
+               "parameters" : {
+                  "force_hold_threshold" : "0.02",
+                  "force_release_threshold" : "0.01"
+               },
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "grab" : {
+                     "output" : "/actions/default/in/grabpinch"
+                  }
+               },
+               "mode" : "grab",
+               "parameters" : {
+                  "force_hold_threshold" : "0.02",
+                  "force_release_threshold" : "0.01"
+               },
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "grab" : {
+                     "output" : "/actions/default/in/grabpinch"
+                  }
+               },
+               "mode" : "grab",
+               "parameters" : {
+                  "force_hold_threshold" : "0.02",
+                  "force_release_threshold" : "0.01"
+               },
+               "path" : "/user/hand/right/input/pinch"
+            }
+         ]
+      },
+      "/actions/rock" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/rock/in/Squeeze"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/rock/in/Squeeze"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/rock/in/Squeeze"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/rock/in/Squeeze"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/rock/in/Crush"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.65",
+                  "click_deactivate_threshold" : "0.6",
+                  "force_input" : "force"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/rock/in/Crush"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.65",
+                  "click_deactivate_threshold" : "0.6",
+                  "force_input" : "force"
+               },
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/rock/in/Crush"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.65",
+                  "click_deactivate_threshold" : "0.6",
+                  "force_input" : "force"
+               },
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/rock/in/Crush"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.65",
+                  "click_deactivate_threshold" : "0.6",
+                  "force_input" : "force"
+               },
+               "path" : "/user/hand/right/input/trackpad"
+            }
+         ]
+      },
+      "/actions/space" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/space/in/DeleterSelect"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.1",
+                  "click_deactivate_threshold" : "0.05"
+               },
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/space/in/DeleterSelect"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.1",
+                  "click_deactivate_threshold" : "0.05"
+               },
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/space/in/DeleterDelete"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.95",
+                  "click_deactivate_threshold" : "0.9"
+               },
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/space/in/DeleterDelete"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.95",
+                  "click_deactivate_threshold" : "0.9"
+               },
+               "path" : "/user/hand/right/input/trigger"
+            }
+         ]
+      },
+    "/actions/grenade": {
+      "sources": [
+        {
+          "inputs": {
+            "click": {
+              "output": "/actions/grenade/in/PrimeGrenade"
+            }
+          },
+          "mode": "button",
+          "parameters": {
+            "click_activate_threshold": "0.65",
+            "click_deactivate_threshold": "0.6",
+            "force_input": "force"
+          },
+          "path": "/user/hand/left/input/grip"
+        },
+        {
+          "inputs": {
+            "click": {
+              "output": "/actions/grenade/in/PrimeGrenade"
+            }
+          },
+          "mode": "button",
+          "parameters": {
+            "click_activate_threshold": "0.65",
+            "click_deactivate_threshold": "0.6",
+            "force_input": "force"
+          },
+          "path": "/user/hand/right/input/grip"
+        }
+      ]
+    },
+    "/actions/gun" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/gun/in/Fire"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/gun/in/Fire"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/trigger"
+            }
+         ]
+      },"/actions/squeezable" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/squeezable/in/SqueezeGrip"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/squeezable/in/SqueezeGrip"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/squeezable/in/SqueezePinch"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/squeezable/in/SqueezePinch"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/right/input/trackpad"
+            }
+         ]
+      }
+   },
+   "controller_type" : "knuckles",
+   "description" : "",
+   "name" : "knuckles_default"
+}

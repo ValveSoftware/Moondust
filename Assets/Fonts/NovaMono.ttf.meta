@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: cbeafca379760ae4083e2a55d0d5680d
+timeCreated: 1515954312
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: NovaMono
+  fontNames:
+  - NovaMono
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

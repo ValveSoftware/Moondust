@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: 4882f6343a5d60142908595053482607
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: modern_concrete_001/modern_concrete_001
+    400000: modern_concrete_001/modern_concrete_001/Transform
+    2100000: mat.modern_concrete_001
+    2100002: mat.modern_concrete_NoLines
+    2300000: modern_concrete_001/modern_concrete_001/MeshRenderer
+    2800000: modern_concrete_001_Base Color
+    2800002: modern_concrete_001_Normal
+    2800004: modern_concrete_001_Metallic
+    2800006: modern_concrete_001_Ambient Occlusion
+    2800008: modern_concrete_001_Height
+    2800010: modern_concrete_NoLines_Base Color
+    2800012: modern_concrete_NoLines_Normal
+    2800014: modern_concrete_NoLines_Metallic
+    2800016: modern_concrete_NoLines_Ambient Occlusion
+    2800018: modern_concrete_NoLines_Height
+    3300000: modern_concrete_001/modern_concrete_001/MeshFilter
+    11400000: graph1
+    11400002: sbsar
+    11400004: graph0
+    13500000: modern_concrete_001/modern_concrete_001/SphereCollider
+    100100000: modern_concrete_001
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  mGraphInstanceData:
+  - graphLabel: modern_concrete_001
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://modern_concrete_001\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"2564893299\" type=\"8\" value=\"11,11\" />\n
+      \ <presetinput identifier=\"luminosity\" uid=\"2646447048\" type=\"0\" value=\"0.675\"
+      />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Ambient Occlusion,Height
+    texturePackingList:
+    - outputName: Diffuse
+      alphaSource: Diffuse
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Specular
+      alphaSource: Specular
+    - outputName: Glossiness
+      alphaSource: Glossiness
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Ambient Occlusion
+      alphaSource: Ambient Occlusion
+    - outputName: Height
+      alphaSource: Height
+    colorSpaceList:
+    - outputName: Diffuse
+      bLinear: 0
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Specular
+      bLinear: 0
+    - outputName: Glossiness
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Ambient Occlusion
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      loadBehavior: 1
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {instanceID: 0}
+  - graphLabel: modern_concrete_NoLines
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://modern_concrete_001\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"2564893299\" type=\"8\" value=\"10,10\" />\n
+      \ <presetinput identifier=\"height\" uid=\"3932662643\" type=\"4\" value=\"0\"
+      />\n  <presetinput identifier=\"normal_intensity\" uid=\"2646371497\" type=\"0\"
+      value=\"0.177\" />\n  <presetinput identifier=\"height_range\" uid=\"3932662647\"
+      type=\"0\" value=\"0.512\" />\n  <presetinput identifier=\"divisions\" uid=\"3933028209\"
+      type=\"4\" value=\"2\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Ambient Occlusion,Height
+    texturePackingList:
+    - outputName: Diffuse
+      alphaSource: Diffuse
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Specular
+      alphaSource: Specular
+    - outputName: Glossiness
+      alphaSource: Glossiness
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Ambient Occlusion
+      alphaSource: Ambient Occlusion
+    - outputName: Height
+      alphaSource: Height
+    colorSpaceList:
+    - outputName: Diffuse
+      bLinear: 0
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Specular
+      bLinear: 0
+    - outputName: Glossiness
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Ambient Occlusion
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadBehavior: 1
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      loadBehavior: 1
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {instanceID: 0}

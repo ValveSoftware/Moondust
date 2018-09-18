@@ -1,0 +1,89 @@
+fileFormatVersion: 2
+guid: 4d840cfcc0675f74e8337d16863874f1
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: MedBay_Floor_MedBay_Floor/MedBay_Floor_MedBay_Floor
+    400000: MedBay_Floor_MedBay_Floor/MedBay_Floor_MedBay_Floor/Transform
+    2100000: mat.MedBay_Floor
+    2300000: MedBay_Floor_MedBay_Floor/MedBay_Floor_MedBay_Floor/MeshRenderer
+    2800000: MedBay_Floor_Base Color
+    2800002: MedBay_Floor_Normal
+    2800004: MedBay_Floor_Metallic
+    2800006: MedBay_Floor_height
+    2800008: MedBay_Floor_ambientOcclusion
+    3300000: MedBay_Floor_MedBay_Floor/MedBay_Floor_MedBay_Floor/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: MedBay_Floor_MedBay_Floor/MedBay_Floor_MedBay_Floor/SphereCollider
+    100100000: MedBay_Floor_MedBay_Floor
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  mGraphInstanceData:
+  - graphLabel: MedBay_Floor
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://MedBay_Floor\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"3033389100\" type=\"8\" value=\"9,9\" />\n
+      \ <presetinput identifier=\"roughness\" uid=\"3300787231\" type=\"0\" value=\"0.388\"
+      />\n  <presetinput identifier=\"metallic\" uid=\"3300788193\" type=\"0\" value=\"0.578\"
+      />\n  <presetinput identifier=\"outputcolor\" uid=\"3300789605\" type=\"3\"
+      value=\"1,0.969168,0.941176,1\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,height,ambientOcclusion
+    texturePackingList:
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: height
+      alphaSource: height
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    colorSpaceList:
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadBehavior: 1
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {instanceID: 0}

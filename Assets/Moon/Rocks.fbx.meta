@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: 03e0d84140f828740b25c30f3621776a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Pebble1
+    100002: Pebble2
+    100004: Pebble3
+    100006: PebbleTiny
+    100008: Rock0_LOD0
+    100010: Rock0_LOD1
+    100012: Rock0_LOD2
+    100014: Rock1_LOD0
+    100016: Rock1_LOD1
+    100018: Rock1_LOD2
+    100020: Rock2_LOD0
+    100022: Rock2_LOD1
+    100024: Rock2_LOD2
+    100026: Rock3_LOD0
+    100028: Rock3_LOD1
+    100030: Rock3_LOD2
+    100032: //RootNode
+    400000: Pebble1
+    400002: Pebble2
+    400004: Pebble3
+    400006: PebbleTiny
+    400008: Rock0_LOD0
+    400010: Rock0_LOD1
+    400012: Rock0_LOD2
+    400014: Rock1_LOD0
+    400016: Rock1_LOD1
+    400018: Rock1_LOD2
+    400020: Rock2_LOD0
+    400022: Rock2_LOD1
+    400024: Rock2_LOD2
+    400026: Rock3_LOD0
+    400028: Rock3_LOD1
+    400030: Rock3_LOD2
+    400032: //RootNode
+    2100000: Moonrock
+    2300000: Pebble1
+    2300002: Pebble2
+    2300004: Pebble3
+    2300006: PebbleTiny
+    2300008: Rock0_LOD0
+    2300010: Rock0_LOD1
+    2300012: Rock0_LOD2
+    2300014: Rock1_LOD0
+    2300016: Rock1_LOD1
+    2300018: Rock1_LOD2
+    2300020: Rock2_LOD0
+    2300022: Rock2_LOD1
+    2300024: Rock2_LOD2
+    2300026: Rock3_LOD0
+    2300028: Rock3_LOD1
+    2300030: Rock3_LOD2
+    3300000: Pebble1
+    3300002: Pebble2
+    3300004: Pebble3
+    3300006: PebbleTiny
+    3300008: Rock0_LOD0
+    3300010: Rock0_LOD1
+    3300012: Rock0_LOD2
+    3300014: Rock1_LOD0
+    3300016: Rock1_LOD1
+    3300018: Rock1_LOD2
+    3300020: Rock2_LOD0
+    3300022: Rock2_LOD1
+    3300024: Rock2_LOD2
+    3300026: Rock3_LOD0
+    3300028: Rock3_LOD1
+    3300030: Rock3_LOD2
+    4300000: Rock0_LOD2
+    4300002: Rock1_LOD2
+    4300004: Rock2_LOD2
+    4300006: Rock3_LOD2
+    4300008: Rock3_LOD1
+    4300010: Rock2_LOD1
+    4300012: Rock1_LOD1
+    4300014: Rock0_LOD1
+    4300016: PebbleTiny
+    4300018: Rock0_LOD0
+    4300020: Rock1_LOD0
+    4300022: Rock2_LOD0
+    4300024: Rock3_LOD0
+    4300026: Pebble1
+    4300028: Pebble2
+    4300030: Pebble3
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Moonrock
+    second: {fileID: 2100000, guid: af115eccd0d233a46b3b336df3547ece, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.01
+    globalScale: 3
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

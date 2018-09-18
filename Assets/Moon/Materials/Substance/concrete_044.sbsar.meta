@@ -1,0 +1,106 @@
+fileFormatVersion: 2
+guid: f74e1960980d881458d18b12999e976f
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: concrete_044/concrete_044
+    400000: concrete_044/concrete_044/Transform
+    2100000: mat.concrete_044
+    2300000: concrete_044/concrete_044/MeshRenderer
+    2800000: concrete_044_Base Color
+    2800002: concrete_044_Normal
+    2800004: concrete_044_Metallic
+    2800006: concrete_044_Ambient Occlusion
+    2800008: concrete_044_Height
+    3300000: concrete_044/concrete_044/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: concrete_044/concrete_044/SphereCollider
+    100100000: concrete_044
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  mGraphInstanceData:
+  - graphLabel: concrete_044
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://concrete_044\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"3741626572\" type=\"8\" value=\"11,11\" />\n
+      \ <presetinput identifier=\"ambient_occlusion\" uid=\"2745903606\" type=\"4\"
+      value=\"0\" />\n  <presetinput identifier=\"height\" uid=\"2745903601\" type=\"4\"
+      value=\"0\" />\n  <presetinput identifier=\"cracks\" uid=\"2784938737\" type=\"0\"
+      value=\"0.418\" />\n  <presetinput identifier=\"dirtiness\" uid=\"2784939302\"
+      type=\"0\" value=\"0.299\" />\n  <presetinput identifier=\"dirtiness_01_color\"
+      uid=\"2784938742\" type=\"2\" value=\"0.610294,0.614782,0.614782\" />\n  <presetinput
+      identifier=\"dirtiness_02_color\" uid=\"2784951194\" type=\"2\" value=\"0.433824,0.429061,0.414684\"
+      />\n  <presetinput identifier=\"concrete_color\" uid=\"2784938740\" type=\"2\"
+      value=\"0.867647,0.867647,0.867647\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Ambient Occlusion,Height
+    texturePackingList:
+    - outputName: Diffuse
+      alphaSource: Diffuse
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Specular
+      alphaSource: Specular
+    - outputName: Glossiness
+      alphaSource: Glossiness
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Ambient Occlusion
+      alphaSource: Ambient Occlusion
+    - outputName: Height
+      alphaSource: Height
+    colorSpaceList:
+    - outputName: Diffuse
+      bLinear: 0
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Specular
+      bLinear: 0
+    - outputName: Glossiness
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Ambient Occlusion
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadBehavior: 1
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      loadBehavior: 3
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {instanceID: 0}

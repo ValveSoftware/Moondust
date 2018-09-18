@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0b931666237a846b3cedabe402479d, type: 3}
+  m_Name: __actions_squeezable
+  m_EditorClassIdentifier: 
+  allActions:
+  - {fileID: 11400000, guid: 8fa13d35d88ab854f9c45475c774b790, type: 2}
+  - {fileID: 11400000, guid: 5500b3317c60f4341a0ed171593d33e8, type: 2}
+  nonVisualInActions:
+  - {fileID: 11400000, guid: 8fa13d35d88ab854f9c45475c774b790, type: 2}
+  - {fileID: 11400000, guid: 5500b3317c60f4341a0ed171593d33e8, type: 2}
+  visualActions: []
+  poseActions: []
+  skeletonActions: []
+  outActionArray: []
+  fullPath: /actions/squeezable
+  usage: single
+  inActions: {fileID: 11400000, guid: b0aaff18af43d85419c55950ba64282f, type: 2}

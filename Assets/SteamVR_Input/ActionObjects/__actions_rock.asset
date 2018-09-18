@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a11f079b58dba5e46af99e9930c3d4c3, type: 3}
+  m_Name: __actions_rock
+  m_EditorClassIdentifier: 
+  allActions:
+  - {fileID: 11400000, guid: 54f7a87ae21e43e4189c2b26b6c36a72, type: 2}
+  - {fileID: 11400000, guid: 46976eee08f66e54ca7d0a0f40bb5c4b, type: 2}
+  nonVisualInActions:
+  - {fileID: 11400000, guid: 54f7a87ae21e43e4189c2b26b6c36a72, type: 2}
+  - {fileID: 11400000, guid: 46976eee08f66e54ca7d0a0f40bb5c4b, type: 2}
+  visualActions: []
+  poseActions: []
+  skeletonActions: []
+  outActionArray: []
+  fullPath: /actions/rock
+  usage: single
+  inActions: {fileID: 11400000, guid: 18ab6660c0b20704cb9bbb8b4db1020a, type: 2}

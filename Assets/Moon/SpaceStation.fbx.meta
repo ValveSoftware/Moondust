@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 1796109e2ae981c4bb55c9fd456a3737
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Connector
+    100002: Core
+    100004: Deploy
+    100006: Deploy_end
+    100008: Dish
+    100010: DishRot
+    100012: End
+    100014: Rig_Ring
+    100016: Rig_SPL
+    100018: Ring
+    100020: Ring 1
+    100022: Ring_end
+    100024: Root
+    100026: Root 1
+    100028: SolarPanels_L
+    100030: SolarPanels_S
+    100032: //RootNode
+    100034: Spin
+    100036: Stretch
+    100038: strut
+    100040: strut_end
+    100042: Tee
+    100044: Thruster
+    100046: ThrusterGlow
+    100048: X
+    400000: Connector
+    400002: Core
+    400004: Deploy
+    400006: Deploy_end
+    400008: Dish
+    400010: DishRot
+    400012: End
+    400014: Rig_Ring
+    400016: Rig_SPL
+    400018: Ring
+    400020: Ring 1
+    400022: Ring_end
+    400024: Root
+    400026: Root 1
+    400028: SolarPanels_L
+    400030: SolarPanels_S
+    400032: //RootNode
+    400034: Spin
+    400036: Stretch
+    400038: strut
+    400040: strut_end
+    400042: Tee
+    400044: Thruster
+    400046: ThrusterGlow
+    400048: X
+    2100000: Station
+    2100002: Station_Glass
+    2100004: Station_Dark
+    2100006: ThrusterGlow
+    2300000: Connector
+    2300002: Core
+    2300004: Dish
+    2300006: DishRot
+    2300008: End
+    2300010: Tee
+    2300012: Thruster
+    2300014: ThrusterGlow
+    2300016: X
+    3300000: Connector
+    3300002: Core
+    3300004: Dish
+    3300006: DishRot
+    3300008: End
+    3300010: Tee
+    3300012: Thruster
+    3300014: ThrusterGlow
+    3300016: X
+    4300000: SolarPanels_S
+    4300002: SolarPanels_L
+    4300004: Dish
+    4300006: DishRot
+    4300008: End
+    4300010: X
+    4300012: Tee
+    4300014: Connector
+    4300016: Core
+    4300018: Ring
+    4300020: Thruster
+    4300022: ThrusterGlow
+    9500000: //RootNode
+    13700000: Ring
+    13700002: SolarPanels_L
+    13700004: SolarPanels_S
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station
+    second: {fileID: 2100000, guid: 3218525aa98ed5f43bf6b680484ebb7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station_Dark
+    second: {fileID: 2100000, guid: 2deb4d1f3da1c6341902e43cd8a906ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station_Glass
+    second: {fileID: 2100000, guid: 82b6ebd7a5c9212418b9699a66be16c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ThrusterGlow
+    second: {fileID: 2100000, guid: 1f3f388921457b440936d4dc8ad51e56, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.5
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 0.5
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

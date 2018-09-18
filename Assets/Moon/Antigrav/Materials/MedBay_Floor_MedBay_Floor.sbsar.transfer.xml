@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Substance>
+  <Graphs>
+    <Graph>
+      <Name>MedBay_Floor</Name>
+      <PrototypeName>MedBay_Floor</PrototypeName>
+      <PrototypeIndex>0</PrototypeIndex>
+      <Preset> &lt;sbspreset pkgurl="pkg://MedBay_Floor/MedBay_Floor" description="Exported from Unity" label="unity"&gt;
+ &lt;presetinput identifier="$outputsize" uid="3033389100" type="8" value="9,9"/&gt;
+ &lt;presetinput identifier="$randomseed" uid="3820998270" type="4" value="0"/&gt;
+ &lt;presetinput identifier="roughness" uid="3300787231" type="0" value="0.388000"/&gt;
+ &lt;presetinput identifier="metallic" uid="3300788193" type="0" value="0.578000"/&gt;
+ &lt;presetinput identifier="outputcolor" uid="3300789605" type="3" value="1.000000,0.969168,0.941176,1.000000"/&gt;
+ &lt;/sbspreset&gt;
+</Preset>
+      <FileID>-85375547</FileID>
+      <GUID>4d840cfcc0675f74e8337d16863874f1</GUID>
+      <TargetSetting>
+        <BuildTarget>Default</BuildTarget>
+        <TextureWidth>512</TextureWidth>
+        <TextureHeight>512</TextureHeight>
+        <TextureFormat>0</TextureFormat>
+        <LoadingBehavior>1</LoadingBehavior>
+      </TargetSetting>
+    </Graph>
+  </Graphs>
+</Substance>

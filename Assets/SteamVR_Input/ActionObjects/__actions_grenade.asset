@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31b6fdd3d818a3e469ea78f368015111, type: 3}
+  m_Name: __actions_grenade
+  m_EditorClassIdentifier: 
+  allActions:
+  - {fileID: 11400000, guid: b8ea4b14d442c7344b016a166f333f97, type: 2}
+  nonVisualInActions:
+  - {fileID: 11400000, guid: b8ea4b14d442c7344b016a166f333f97, type: 2}
+  visualActions: []
+  poseActions: []
+  skeletonActions: []
+  outActionArray: []
+  fullPath: /actions/grenade
+  usage: single
+  inActions: {fileID: 11400000, guid: cb3c60f701c695e4ebed92d472e9f3e5, type: 2}

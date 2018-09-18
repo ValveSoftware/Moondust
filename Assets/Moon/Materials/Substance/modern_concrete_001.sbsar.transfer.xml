@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Substance>
+  <Graphs>
+    <Graph>
+      <Name>modern_concrete_001</Name>
+      <PrototypeName>modern_concrete_001</PrototypeName>
+      <PrototypeIndex>0</PrototypeIndex>
+      <Preset> &lt;sbspreset pkgurl="pkg://modern_concrete_001/modern_concrete_001" description="Exported from Unity" label="unity"&gt;
+ &lt;presetinput identifier="$outputsize" uid="2564893299" type="8" value="11,11"/&gt;
+ &lt;presetinput identifier="$randomseed" uid="3482532897" type="4" value="0"/&gt;
+ &lt;presetinput identifier="diffuse" uid="3932662533" type="4" value="0"/&gt;
+ &lt;presetinput identifier="basecolor" uid="3932662538" type="4" value="1"/&gt;
+ &lt;presetinput identifier="normal" uid="3932662536" type="4" value="1"/&gt;
+ &lt;presetinput identifier="specular" uid="3932662537" type="4" value="0"/&gt;
+ &lt;presetinput identifier="glossiness" uid="3932662542" type="4" value="0"/&gt;
+ &lt;presetinput identifier="roughness" uid="3932662540" type="4" value="1"/&gt;
+ &lt;presetinput identifier="metallic" uid="3932662541" type="4" value="1"/&gt;
+ &lt;presetinput identifier="ambient_occlusion" uid="3932662642" type="4" value="1"/&gt;
+ &lt;presetinput identifier="height" uid="3932662643" type="4" value="1"/&gt;
+ &lt;presetinput identifier="luminosity" uid="2646447048" type="0" value="0.675000"/&gt;
+ &lt;presetinput identifier="contrast" uid="3795578446" type="0" value="0.000000"/&gt;
+ &lt;presetinput identifier="hue_shift" uid="2646447034" type="0" value="0.000000"/&gt;
+ &lt;presetinput identifier="saturation" uid="2646447069" type="0" value="0.500000"/&gt;
+ &lt;presetinput identifier="normal_intensity" uid="2646371497" type="0" value="0.500000"/&gt;
+ &lt;presetinput identifier="normal_format" uid="3932662641" type="4" value="0"/&gt;
+ &lt;presetinput identifier="ao_spreading" uid="3932662646" type="0" value="0.500000"/&gt;
+ &lt;presetinput identifier="height_range" uid="3932662647" type="0" value="0.500000"/&gt;
+ &lt;presetinput identifier="height_position" uid="3932662645" type="0" value="0.500000"/&gt;
+ &lt;presetinput identifier="divisions" uid="3933028209" type="4" value="8"/&gt;
+ &lt;presetinput identifier="age" uid="3933039780" type="0" value="0.000000"/&gt;
+ &lt;presetinput identifier="concrete_color" uid="3931442847" type="2" value="0.623529,0.623529,0.623529"/&gt;
+ &lt;presetinput identifier="metal_bar_color" uid="3931442749" type="2" value="0.631373,0.435294,0.345098"/&gt;
+ &lt;/sbspreset&gt;
+</Preset>
+      <FileID>-129598343</FileID>
+      <GUID>4882f6343a5d60142908595053482607</GUID>
+      <TargetSetting>
+        <BuildTarget>Default</BuildTarget>
+        <TextureWidth>2048</TextureWidth>
+        <TextureHeight>2048</TextureHeight>
+        <TextureFormat>0</TextureFormat>
+        <LoadingBehavior>1</LoadingBehavior>
+      </TargetSetting>
+    </Graph>
+    <Graph>
+      <Name>modern_concrete_NoLines</Name>
+      <PrototypeName>modern_concrete_001</PrototypeName>
+      <PrototypeIndex>0</PrototypeIndex>
+      <Preset> &lt;sbspreset pkgurl="pkg://modern_concrete_NoLines/modern_concrete_NoLines" description="Exported from Unity" label="unity"&gt;
+ &lt;presetinput identifier="$outputsize" uid="2564893299" type="8" value="10,10"/&gt;
+ &lt;presetinput identifier="$randomseed" uid="3482532897" type="4" value="0"/&gt;
+ &lt;presetinput identifier="diffuse" uid="3932662533" type="4" value="0"/&gt;
+ &lt;presetinput identifier="basecolor" uid="3932662538" type="4" value="1"/&gt;
+ &lt;presetinput identifier="normal" uid="3932662536" type="4" value="1"/&gt;
+ &lt;presetinput identifier="specular" uid="3932662537" type="4" value="0"/&gt;
+ &lt;presetinput identifier="glossiness" uid="3932662542" type="4" value="0"/&gt;
+ &lt;presetinput identifier="roughness" uid="3932662540" type="4" value="1"/&gt;
+ &lt;presetinput identifier="metallic" uid="3932662541" type="4" value="1"/&gt;
+ &lt;presetinput identifier="ambient_occlusion" uid="3932662642" type="4" value="1"/&gt;
+ &lt;presetinput identifier="height" uid="3932662643" type="4" value="0"/&gt;
+ &lt;presetinput identifier="luminosity" uid="2646447048" type="0" value="0.500000"/&gt;
+ &lt;presetinput identifier="contrast" uid="3795578446" type="0" value="0.000000"/&gt;
+ &lt;presetinput identifier="hue_shift" uid="2646447034" type="0" value="0.000000"/&gt;
+ &lt;presetinput identifier="saturation" uid="2646447069" type="0" value="0.500000"/&gt;
+ &lt;presetinput identifier="normal_intensity" uid="2646371497" type="0" value="0.177000"/&gt;
+ &lt;presetinput identifier="normal_format" uid="3932662641" type="4" value="0"/&gt;
+ &lt;presetinput identifier="ao_spreading" uid="3932662646" type="0" value="0.500000"/&gt;
+ &lt;presetinput identifier="height_range" uid="3932662647" type="0" value="0.512000"/&gt;
+ &lt;presetinput identifier="height_position" uid="3932662645" type="0" value="0.500000"/&gt;
+ &lt;presetinput identifier="divisions" uid="3933028209" type="4" value="2"/&gt;
+ &lt;presetinput identifier="age" uid="3933039780" type="0" value="0.000000"/&gt;
+ &lt;presetinput identifier="concrete_color" uid="3931442847" type="2" value="0.623529,0.623529,0.623529"/&gt;
+ &lt;presetinput identifier="metal_bar_color" uid="3931442749" type="2" value="0.631373,0.435294,0.345098"/&gt;
+ &lt;/sbspreset&gt;
+</Preset>
+      <FileID>-445234722</FileID>
+      <GUID>4882f6343a5d60142908595053482607</GUID>
+      <TargetSetting>
+        <BuildTarget>Default</BuildTarget>
+        <TextureWidth>512</TextureWidth>
+        <TextureHeight>512</TextureHeight>
+        <TextureFormat>0</TextureFormat>
+        <LoadingBehavior>1</LoadingBehavior>
+      </TargetSetting>
+      <TargetSetting>
+        <BuildTarget>Standalone</BuildTarget>
+        <TextureWidth>1024</TextureWidth>
+        <TextureHeight>1024</TextureHeight>
+        <TextureFormat>0</TextureFormat>
+        <LoadingBehavior>1</LoadingBehavior>
+      </TargetSetting>
+    </Graph>
+  </Graphs>
+</Substance>

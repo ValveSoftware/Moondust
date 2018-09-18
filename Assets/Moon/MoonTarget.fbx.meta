@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: 6a4e74e5e1a954147a018565c79a8de7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: hitSuccess
+    100002: //RootNode
+    100004: Target
+    100006: Target_0
+    100008: Target_1
+    100010: Target_2
+    100012: Target_3
+    400000: hitSuccess
+    400002: //RootNode
+    400004: Target
+    400006: Target_0
+    400008: Target_1
+    400010: Target_2
+    400012: Target_3
+    2100000: hitSuccess
+    2100002: MoonTarget
+    2100004: TargetGlow
+    2300000: hitSuccess
+    2300002: Target
+    2300004: Target_0
+    2300006: Target_1
+    2300008: Target_2
+    2300010: Target_3
+    3300000: hitSuccess
+    3300002: Target
+    3300004: Target_0
+    3300006: Target_1
+    3300008: Target_2
+    3300010: Target_3
+    4300000: hitSuccess
+    4300002: Target
+    4300004: Target_1
+    4300006: Target_2
+    4300008: Target_3
+    4300010: Target_0
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MoonTarget
+    second: {fileID: 2100000, guid: a963f2a26d963384e984bc60d39d50f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TargetGlow
+    second: {fileID: 2100000, guid: 4cd258880eecae14681d38ff55baafe6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hitSuccess
+    second: {fileID: 2100000, guid: 6ab49053cc1c95e4592f9cf8edf97134, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

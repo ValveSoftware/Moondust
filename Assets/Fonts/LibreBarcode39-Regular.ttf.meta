@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 2d3aebf9e0649ec4ea07324a1a40d322
+timeCreated: 1516053560
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Libre Barcode 39
+  fontNames:
+  - Libre Barcode 39
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

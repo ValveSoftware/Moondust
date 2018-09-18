@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: be11261c93723784ea4796f3b6dbed25
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: AntennaThin
+    100002: AntennaWide
+    100004: Crane
+    100006: Elevator
+    100008: ElevatorTrack
+    100010: HeavyBeam
+    100012: Rope
+    100014: Rotator
+    100016: SolarPanels
+    100018: Tower
+    100020: TowerBase
+    100022: TowerFinish
+    100024: //RootNode
+    100026: TowerSpin
+    100028: TowerTop
+    400000: AntennaThin
+    400002: AntennaWide
+    400004: Crane
+    400006: Elevator
+    400008: ElevatorTrack
+    400010: HeavyBeam
+    400012: Rope
+    400014: Rotator
+    400016: SolarPanels
+    400018: Tower
+    400020: TowerBase
+    400022: TowerFinish
+    400024: //RootNode
+    400026: TowerSpin
+    400028: TowerTop
+    2100000: Towers
+    2100002: BlinkLight
+    2100004: BlinkLightSlow
+    2300000: AntennaThin
+    2300002: AntennaWide
+    2300004: Crane
+    2300006: Elevator
+    2300008: ElevatorTrack
+    2300010: HeavyBeam
+    2300012: Rope
+    2300014: Rotator
+    2300016: SolarPanels
+    2300018: Tower
+    2300020: TowerBase
+    2300022: TowerFinish
+    2300024: TowerSpin
+    2300026: TowerTop
+    3300000: AntennaThin
+    3300002: AntennaWide
+    3300004: Crane
+    3300006: Elevator
+    3300008: ElevatorTrack
+    3300010: HeavyBeam
+    3300012: Rope
+    3300014: Rotator
+    3300016: SolarPanels
+    3300018: Tower
+    3300020: TowerBase
+    3300022: TowerFinish
+    3300024: TowerSpin
+    3300026: TowerTop
+    4300000: Rope
+    4300002: SolarPanels
+    4300004: AntennaThin
+    4300006: AntennaWide
+    4300008: TowerFinish
+    4300010: Elevator
+    4300012: ElevatorTrack
+    4300014: TowerTop
+    4300016: HeavyBeam
+    4300018: Crane
+    4300020: TowerSpin
+    4300022: Rotator
+    4300024: Tower
+    4300026: TowerBase
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlinkLight
+    second: {fileID: 2100000, guid: 28d6b1019a2c1824f83ba5871b01ebd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlinkLightSlow
+    second: {fileID: 2100000, guid: 78a1884452848f44c8e27c64cfa7fa49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Towers
+    second: {fileID: 2100000, guid: d68bfc89151fe0a498384541c7741e1b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

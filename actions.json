@@ -1,0 +1,135 @@
+{
+  "actions": [
+    {
+      "name": "/actions/default/in/GrabPinch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/GrabGrip",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/Pose",
+      "type": "pose"
+    },
+    {
+      "name": "/actions/default/in/SkeletonLeftHand",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/left"
+    },
+    {
+      "name": "/actions/default/in/SkeletonRightHand",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/right"
+    },
+    {
+      "name": "/actions/default/out/Haptic",
+      "type": "vibration"
+    },
+    {
+      "name": "/actions/rock/in/Squeeze",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/rock/in/Crush",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/buggybuddy/in/Throttle",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/buggybuddy/in/Steer",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/buggybuddy/in/Brake",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/buggybuddy/in/Reset",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/buggybuddy/in/Turbo",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/space/in/DeleterSelect",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/space/in/DeleterDelete",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/grenade/in/PrimeGrenade",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/squeezable/in/SqueezePinch",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/squeezable/in/SqueezeGrip",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/teleporting/in/Teleport",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/gun/in/Fire",
+      "type": "boolean"
+    }
+  ],
+  "action_sets": [
+    {
+      "name": "/actions/default",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/rock",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/buggybuddy",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/space",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/grenade",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/squeezable",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/teleporting",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/gun",
+      "usage": "single"
+    }
+  ],
+  "default_bindings": [
+    {
+      "controller_type": "knuckles",
+      "binding_url": "bindings_knuckles.json"
+    }
+  ],
+  "localization": [
+    {
+      "language_tag": "en_US",
+      "/actions/default/in/GrabPinch": "Grab Pinch",
+      "/actions/default/in/GrabGrip": "Grab Grip",
+      "/actions/default/in/SkeletonLeftHand": "Skeleton (Left)",
+      "/actions/default/in/SkeletonRightHand": "Skeleton (Right)"
+    }
+  ]
+}
