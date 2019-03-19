@@ -23,6 +23,19 @@
       "skeleton": "/skeleton/hand/right"
     },
     {
+      "name": "/actions/default/in/HeadsetOnHead",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/default/in/InteractUI",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/Menu",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -81,6 +94,66 @@
     {
       "name": "/actions/gun/in/Fire",
       "type": "boolean"
+    },
+    {
+      "name": "/actions/raw/in/ATouch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/raw/in/APress",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/raw/in/BTouch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/raw/in/BPress",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/raw/in/TouchpadTouch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/raw/in/TouchpadPress",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/raw/in/TouchpadAxis",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/raw/in/ThumbstickTouch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/raw/in/ThumbstickPress",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/raw/in/ThumbstickAxis",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/raw/in/TriggerTouch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/raw/in/TriggerPress",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/raw/in/TriggerAxis",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/raw/in/GripForceAxis",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/raw/in/TopForceAxis",
+      "type": "vector1"
     }
   ],
   "action_sets": [
@@ -115,19 +188,27 @@
     {
       "name": "/actions/gun",
       "usage": "single"
+    },
+    {
+      "name": "/actions/raw",
+      "usage": "single"
     }
   ],
   "default_bindings": [
     {
       "controller_type": "knuckles",
       "binding_url": "bindings_knuckles.json"
+    },
+    {
+      "controller_type": "vive_controller",
+      "binding_url": "application_generated_unity_moondust_exe_binding_vive_controller.json"
     }
   ],
   "localization": [
     {
       "language_tag": "en_US",
-      "/actions/default/in/GrabPinch": "Grab Pinch",
       "/actions/default/in/GrabGrip": "Grab Grip",
+      "/actions/default/in/GrabPinch": "Grab Pinch",
       "/actions/default/in/SkeletonLeftHand": "Skeleton (Left)",
       "/actions/default/in/SkeletonRightHand": "Skeleton (Right)"
     }

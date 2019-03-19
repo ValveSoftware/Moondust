@@ -24,8 +24,14 @@ public class ThrowingTargetRing : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        target.Hit(ID, collision.contacts[0].point);
-        Destroy(collision.gameObject);
+        if (collision.rigidbody != null)
+        {
+            if (collision.rigidbody.GetComponent<TargetAbsorbable>() != null)
+            {
+                target.Hit(ID, collision.contacts[0].point);
+                Destroy(collision.gameObject);
+            }
+        }
     }
 
     private IEnumerator DoFlashAnim()

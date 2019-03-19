@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FxTemporaire
   - projectile
+  - Music
   layers:
   - Default
   - TransparentFX
@@ -19,18 +20,18 @@ TagManager:
   - Wheels
   - PlayerBody
   - ForceField
-  - Bullet
+  - Rock
   - Teleport
   - Terrain
   - Grenade
   - Vaccuum
-  - PhysicalHandHax
-  - PhysicalButtonHax
+  - Buggy
+  - JoeJeff
   - DontRender
   - Player
   - RockDust
   - RockCrushGrate
-  - 
+  - PostProcessing
   - 
   - 
   - 

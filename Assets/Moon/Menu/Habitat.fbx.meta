@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: c704bc2cfe721a74d9c8814811ba0c92
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: cloth_door_LO
+    100002: Floor_LO
+    100004: //RootNode
+    100006: Room_LO
+    100008: Tunnel_LO
+    100010: Cloth
+    100012: Room
+    100014: Shadowcaster
+    100016: Tunnel
+    100018: Windows
+    100020: Hut.001
+    100022: Door
+    400000: cloth_door_LO
+    400002: Floor_LO
+    400004: //RootNode
+    400006: Room_LO
+    400008: Tunnel_LO
+    400010: Cloth
+    400012: Room
+    400014: Shadowcaster
+    400016: Tunnel
+    400018: Windows
+    400020: Hut.001
+    400022: Door
+    2100000: FabricWalkway
+    2100002: Floor
+    2100004: Room
+    2100006: Glass
+    2100008: Igloo
+    2300000: cloth_door_LO
+    2300002: Floor_LO
+    2300004: Room_LO
+    2300006: Tunnel_LO
+    2300008: Cloth
+    2300010: Room
+    2300012: Shadowcaster
+    2300014: Tunnel
+    2300016: Windows
+    2300018: Hut.001
+    2300020: Door
+    3300000: cloth_door_LO
+    3300002: Floor_LO
+    3300004: Room_LO
+    3300006: Tunnel_LO
+    3300008: Cloth
+    3300010: Room
+    3300012: Shadowcaster
+    3300014: Tunnel
+    3300016: Windows
+    3300018: Hut.001
+    3300020: Door
+    4300000: cloth_door_LO
+    4300002: Floor_LO
+    4300004: Room_LO
+    4300006: Tunnel_LO
+    4300008: Cloth
+    4300010: Room
+    4300012: Tunnel
+    4300014: Shadowcaster
+    4300016: Windows
+    4300018: Hut.001
+    4300020: Door
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FabricWalkway
+    second: {fileID: 2100000, guid: f86eb1325842fcb4fa5bfa4aa81d1a81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: 8469f999a7a7fb74180bd039cbee7eb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: c5df34f365979e24596894cea3cdfbb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Igloo
+    second: {fileID: 2100000, guid: 8ec2d8bab4331184b8c87673be13142e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Room
+    second: {fileID: 2100000, guid: 987e6ffd9ce817c4a85116f33d7a7f99, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 7
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

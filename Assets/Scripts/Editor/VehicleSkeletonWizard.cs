@@ -59,6 +59,6 @@ class VehicleSkeletonWizard : EditorWindow
 		}
 
 		root.AddComponent<EasySuspension>();
-		root.AddComponent<BuggyBuddy>();
+		root.AddComponent<Valve.VR.InteractionSystem.Sample.BuggyBuddy>();
 	}
 }

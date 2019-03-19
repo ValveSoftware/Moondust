@@ -8,16 +8,16 @@ public class passTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        target.SendMessage("OnTriggerEnter", collider);
+        target.SendMessage("OnTriggerEnter", collider, SendMessageOptions.DontRequireReceiver);
     }
 
     void OnTriggerExit(Collider collider)
     {
-        target.SendMessage("OnTriggerExit", collider);
+        target.SendMessage("OnTriggerExit", collider, SendMessageOptions.DontRequireReceiver);
     }
 
     void OnTriggerStay(Collider collider)
     {
-        target.SendMessage("OnTriggerStay", collider);
+        target.SendMessage("OnTriggerStay", collider, SendMessageOptions.DontRequireReceiver);
     }
 }

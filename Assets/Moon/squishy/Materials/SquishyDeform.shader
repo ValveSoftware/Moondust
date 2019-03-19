@@ -15,7 +15,6 @@
 		_Flow("Flow Speed", Vector) = (0,1,0,-1)
 		_FlowFac("Flow Factor", Range(-1,1)) = 1
 
-		_Tess("Tessellation", Range(1,32)) = 4
 
 	}
 	SubShader {
@@ -24,9 +23,9 @@
 
 		CGPROGRAM
 		// Physically based Standard lighting model, and enable shadows on all light types
-		#pragma surface surf Standard fullforwardshadows tessellate:tessDistance tessphong:1
+		#pragma surface surf Standard fullforwardshadows
 
-		#pragma target 4.6
+		#pragma target 3.0
 		#include "Tessellation.cginc"
 
 		struct appdata {
@@ -36,13 +35,8 @@
 			float2 texcoord : TEXCOORD0;
 		};
 
-		float _Tess;
 
-		float4 tessDistance(appdata_full v0, appdata_full v1, appdata_full v2) {
-			float minDist = 0.2;
-			float maxDist = 1.0;
-			return UnityDistanceBasedTess(v0.vertex, v1.vertex, v2.vertex, minDist, maxDist, _Tess);
-		}
+
 
 
 		sampler2D _MainTex;

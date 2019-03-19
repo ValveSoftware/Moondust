@@ -65,6 +65,8 @@ public class ThirdPersonCamera : MonoBehaviour
 
             camRotation += mouse * lookSpeed;
             remote.localRotation = Quaternion.Euler(-camRotation.y, camRotation.x, -mouse.x / 2);
+
+            if (Input.GetKeyDown(KeyCode.Escape)) { ToggleTPC(false); }
         }
     }
 

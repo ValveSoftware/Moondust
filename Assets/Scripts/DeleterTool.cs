@@ -25,8 +25,7 @@ public class DeleterTool : MonoBehaviour
     public GameObject confirmer;
 
     public Transform ptr;
-
-    public SteamVR_ActionSet setToActivate;
+    
     public SteamVR_Action_Boolean actionSelect;
     public SteamVR_Action_Boolean actionDelete;
 
@@ -49,18 +48,6 @@ public class DeleterTool : MonoBehaviour
     {
         interactable = GetComponent<Interactable>();
         body = GetComponent<Rigidbody>();
-        interactable.onAttachedToHand += Interactable_onAttachedToHand;
-        interactable.onDetachedFromHand += Interactable_onDetachedFromHand;
-    }
-
-    private void Interactable_onDetachedFromHand(Hand hand)
-    {
-        setToActivate.Deactivate();
-    }
-
-    private void Interactable_onAttachedToHand(Hand hand)
-    {
-        setToActivate.ActivatePrimary();
     }
 
     private void Update()
@@ -234,17 +221,6 @@ public class DeleterTool : MonoBehaviour
             {
                 yield return null;
             }
-        }
-    }
-
-    private void OnDestroy()
-    {
-        setToActivate.Deactivate();
-        
-        if (interactable != null)
-        {
-            interactable.onAttachedToHand -= Interactable_onAttachedToHand;
-            interactable.onDetachedFromHand -= Interactable_onDetachedFromHand;
         }
     }
 

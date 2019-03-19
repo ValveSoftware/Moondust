@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem.Sample;
 
 public class BuggyReset : ResetPortal
 {
@@ -29,6 +30,8 @@ public class BuggyReset : ResetPortal
 
     public void ResetBuggy()
     {
+        if (resetting) return;
+
         FindSpot(buggy.transform.position);
         ResetNow();
     }
@@ -58,9 +61,9 @@ public class BuggyReset : ResetPortal
         base.ResetNow();
     }
 
-    public override void ResetObject()
+    protected override void ResetObject()
     {
-        buggy.ResetStranded();
+        //buggy.ResetStranded();
         buggy.transform.position = spawnPos.position;
         buggy.transform.rotation = spawnPos.rotation;
         buggy.body.angularVelocity = Vector3.zero;

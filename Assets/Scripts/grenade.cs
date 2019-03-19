@@ -15,8 +15,7 @@ public class grenade : MonoBehaviour
     public GameObject explo;
     public AudioSource au_blip;
     public GameObject blip;
-
-    public SteamVR_ActionSet actionSet;
+    
     public SteamVR_Action_Boolean a_prime;
 
     private bool exploded = false;
@@ -28,35 +27,8 @@ public class grenade : MonoBehaviour
 
     private void Start()
     {
-        interactable = GetComponent<Interactable>();
-        if (interactable != null)
-        {
-            interactable.onAttachedToHand += Interactable_onAttachedToHand;
-            interactable.onDetachedFromHand += Interactable_onDetachedFromHand;
-        }
         init = impact;
-    }
-
-    private void OnDestroy()
-    {
-        if (interactable != null)
-        {
-            interactable.onAttachedToHand -= Interactable_onAttachedToHand;
-            interactable.onDetachedFromHand -= Interactable_onDetachedFromHand;
-        }
-    }
-
-    private void Interactable_onDetachedFromHand(Hand hand)
-    {
-        if (hand.otherHand.currentAttachedObject != null && hand.otherHand.currentAttachedObject.GetComponent<grenade>() != null)
-            return;
-
-        actionSet.Deactivate();
-    }
-
-    private void Interactable_onAttachedToHand(Hand hand)
-    {
-        actionSet.ActivatePrimary();
+        interactable = this.GetComponent<Interactable>();
     }
 
     public void Prime()
@@ -117,6 +89,7 @@ public class grenade : MonoBehaviour
             {
                 au_blip.enabled = init;
             }
+            if ((init || impact) && au_blip.isPlaying == false) au_blip.Play();
             float pitch = (timer / timeTimer) + 1;
             pitch = Mathf.Round(Mathf.Pow(pitch, 2));
             au_blip.pitch = pitch;
@@ -154,7 +127,7 @@ public class grenade : MonoBehaviour
         }
     }
 
-    public void Exploded() // another grenade exploded near me
+    public void Explosion(ExplosionForcer ex) // another grenade exploded near me
     {
         if (age > 5)
         {

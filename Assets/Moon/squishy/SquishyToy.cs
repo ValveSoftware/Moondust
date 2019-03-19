@@ -4,85 +4,60 @@ using UnityEngine;
 using Valve.VR;
 using Valve.VR.InteractionSystem;
 
-public class SquishyToy : MonoBehaviour
+namespace Valve.VR.InteractionSystem
 {
-    public Interactable interactable;
-    public SkinnedMeshRenderer rend;
-
-    public bool affectMaterial = true;
-
-    public float againstGrav;
-
-    public SteamVR_ActionSet actionSet;
-
-    public SteamVR_Action_Single gripSqueeze;
-    public SteamVR_Action_Single pinchSqueeze;
-
-
-    private Rigidbody rb;
-
-    private void Start()
+    public class SquishyToy : MonoBehaviour
     {
-        if (rb == null)
-            rb = GetComponent<Rigidbody>();
-        
-        if (interactable == null)
-            interactable = GetComponent<Interactable>();
-        
-        interactable.onAttachedToHand += Interactable_onAttachedToHand;
-        interactable.onDetachedFromHand += Interactable_onDetachedFromHand;
-    }
+        public Interactable interactable;
+        public new SkinnedMeshRenderer renderer;
 
-    private void Interactable_onDetachedFromHand(Hand hand)
-    {
-        if (hand.otherHand.currentAttachedObject != null && (hand.otherHand.currentAttachedObject.GetComponent<SquishyToy>() != null || hand.otherHand.currentAttachedObject.GetComponent<turret>() != null))
-            return;
+        public bool affectMaterial = true;
 
-        actionSet.Deactivate();
-    }
+        //[SteamVR_DefaultAction("Squeeze")]
+        public SteamVR_Action_Single gripSqueeze;
 
-    private void Interactable_onAttachedToHand(Hand hand)
-    {
-        actionSet.ActivatePrimary();
-    }
+        //[Steamvr("Squeeze")]
+        public SteamVR_Action_Single pinchSqueeze;
 
-    private void OnDestroy()
-    {
-        if (interactable == null)
+
+        private new Rigidbody rigidbody;
+
+        private void Start()
         {
-            interactable.onAttachedToHand -= Interactable_onAttachedToHand;
-            interactable.onDetachedFromHand -= Interactable_onDetachedFromHand;
-        }
-    }
+            if (rigidbody == null)
+                rigidbody = GetComponent<Rigidbody>();
 
-    private void Update()
-    {
-        float grip = 0;
-        float pinch = 0;
+            if (interactable == null)
+                interactable = GetComponent<Interactable>();
 
-        if (interactable.attachedToHand)
-        {
-            grip = gripSqueeze.GetAxis(interactable.attachedToHand.handType);
-            pinch = pinchSqueeze.GetAxis(interactable.attachedToHand.handType);
+            if (renderer == null)
+                renderer = GetComponent<SkinnedMeshRenderer>();
         }
 
-        rend.SetBlendShapeWeight(0, Mathf.Lerp(rend.GetBlendShapeWeight(0), grip * 150, Time.deltaTime * 10));
-
-        if (rend.sharedMesh.blendShapeCount > 1) // make sure there's a pinch blend shape
-            rend.SetBlendShapeWeight(1, Mathf.Lerp(rend.GetBlendShapeWeight(1), pinch * 200, Time.deltaTime * 10));
-
-        if (affectMaterial)
+        private void Update()
         {
-            rend.material.SetFloat("_Deform", Mathf.Pow(grip * 1.5f, 0.5f));
-            if (rend.material.HasProperty("_PinchDeform"))
+            float grip = 0;
+            float pinch = 0;
+
+            if (interactable.attachedToHand)
             {
-                rend.material.SetFloat("_PinchDeform", Mathf.Pow(pinch * 2.0f, 0.5f));
+                grip = gripSqueeze.GetAxis(interactable.attachedToHand.handType);
+                pinch = pinchSqueeze.GetAxis(interactable.attachedToHand.handType);
+            }
+
+            renderer.SetBlendShapeWeight(0, Mathf.Lerp(renderer.GetBlendShapeWeight(0), grip * 150, Time.deltaTime * 10));
+
+            if (renderer.sharedMesh.blendShapeCount > 1) // make sure there's a pinch blend shape
+                renderer.SetBlendShapeWeight(1, Mathf.Lerp(renderer.GetBlendShapeWeight(1), pinch * 200, Time.deltaTime * 10));
+
+            if (affectMaterial)
+            {
+                renderer.material.SetFloat("_Deform", Mathf.Pow(grip * 1.5f, 0.5f));
+                if (renderer.material.HasProperty("_PinchDeform"))
+                {
+                    renderer.material.SetFloat("_PinchDeform", Mathf.Pow(pinch * 2.0f, 0.5f));
+                }
             }
         }
-    }
-
-    private void FixedUpdate()
-    {
-        rb.AddForce(-Physics.gravity * againstGrav, ForceMode.Acceleration);
     }
 }

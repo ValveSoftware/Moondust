@@ -12,7 +12,7 @@ public class ResetPortal : MonoBehaviour
 
     public float shootForce = 4;
 
-    public float disableColsTime = 2;
+    public float disableColsTime = 0.5f;
 
     [HideInInspector]
     public bool resetting;
@@ -24,9 +24,10 @@ public class ResetPortal : MonoBehaviour
     public bool alwaysOpen = false;
 
     public AudioClip exitSound;
+    public AudioClip portalSound;
 
-    public bool disableCollisionsWith = false;
-    public Collider[] disableCollisionsWithList;
+    [Tooltip("disable collisions based on collision bounds, waiting until the object has fully left the portal.")]
+    public bool disableCollidersSmart;
     
     private void Start()
     {
@@ -38,45 +39,44 @@ public class ResetPortal : MonoBehaviour
 
     public IEnumerator DoDisableColliders(float waitTime)
     {
-        Collider[] colliders = resetter.GetComponentsInChildren<Collider>();
-
-        foreach (Collider collider in colliders)
+        if (disableCollidersSmart)
         {
-            collider.enabled = false;
+            //get full bounds of rigidbody
+            Collider[] cols = resetter.GetComponentsInChildren<Collider>();
+            Bounds bounds = new Bounds(resetter.transform.position, Vector3.zero);
+            for(int i = 0; i < cols.Length; i++)
+            {
+                bounds.Encapsulate(cols[i].bounds);
+            }
+            float longestSide = Mathf.Max(new float[] { bounds.size.x, bounds.size.y, bounds.size.z });
+
+            resetter.detectCollisions = false;
+            bool fullyEjected = false;
+            while (!fullyEjected)
+            {
+                yield return null;
+                // wait until object has cleared the portal fully
+                fullyEjected = InverseTransformPointUnscaled(transform, resetter.worldCenterOfMass).z > longestSide / 2 * 1.1f;
+            }
+            resetter.detectCollisions = true;
+            
         }
-
-        yield return new WaitForSeconds(waitTime);
-
-        foreach (Collider collider in colliders)
+        else // just use timing
         {
-            collider.enabled = true;
+            resetter.detectCollisions = false;
+
+            yield return new WaitForSeconds(waitTime);
+
+            resetter.detectCollisions = true;
         }
-        yield return null;
     }
 
-    public IEnumerator DoDisableCollisionsWithList(float waitTime)
+    public static Vector3 InverseTransformPointUnscaled(Transform t, Vector3 position)
     {
-        Collider[] colliders = resetter.GetComponentsInChildren<Collider>();
-
-        for (int listIndex = 0; listIndex < disableCollisionsWithList.Length; listIndex++)
-        {
-            for (int itemIndex = 0; itemIndex < colliders.Length; itemIndex++)
-            {
-                Physics.IgnoreCollision(disableCollisionsWithList[listIndex], colliders[itemIndex], true);
-            }
-        }
-
-        yield return new WaitForSeconds(waitTime);
-
-        for (int listIndex = 0; listIndex < disableCollisionsWithList.Length; listIndex++)
-        {
-            for (int itemIndex = 0; itemIndex < colliders.Length; itemIndex++)
-            {
-                Physics.IgnoreCollision(disableCollisionsWithList[listIndex], colliders[itemIndex], false);
-            }
-        }
-        yield return null;
+        var worldToLocalMatrix = Matrix4x4.TRS(t.position, t.rotation, Vector3.one).inverse;
+        return worldToLocalMatrix.MultiplyPoint3x4(position);
     }
+
 
     public virtual void ResetNow()
     {
@@ -96,7 +96,12 @@ public class ResetPortal : MonoBehaviour
 
             render.localScale = Vector3.zero;
             render.gameObject.SetActive(true);
-            au.Play();
+
+            if (portalSound)
+            {
+                au.PlayOneShot(portalSound, 0.5f);
+            }
+
             while (scaleOverTime < 1)
             {
                 scaleOverTime += Time.deltaTime / 0.3f;
@@ -108,10 +113,7 @@ public class ResetPortal : MonoBehaviour
 
         ResetObject();
 
-        if (disableCollisionsWith == false)
-            StartCoroutine(DoDisableColliders(disableColsTime));
-        else
-            StartCoroutine(DoDisableCollisionsWithList(disableColsTime));
+        StartCoroutine(DoDisableColliders(disableColsTime));
 
         if (!alwaysOpen)
         {
@@ -141,7 +143,14 @@ public class ResetPortal : MonoBehaviour
         resetter.transform.position = Vector3.down * 1000;
     }
 
-    public virtual void ResetObject()
+    public void CancelReset()
+    {
+        StopAllCoroutines();
+        resetter.detectCollisions = true;
+        render.gameObject.SetActive(false);
+    }
+
+    protected virtual void ResetObject()
     {
         resetter.transform.position = spawnPos.position;
         resetter.transform.rotation = spawnPos.rotation;

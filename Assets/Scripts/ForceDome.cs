@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem.Sample;
 
 public class ForceDome : MonoBehaviour
 {
@@ -13,16 +14,17 @@ public class ForceDome : MonoBehaviour
 
     public float lowBound;
 
-    public BuggyBuddy[] buggies;
+    public BuggyReset[] buggies;
 
     private void Update()
     {
-        foreach (BuggyBuddy buggy in buggies)
+        foreach (BuggyReset buggy in buggies)
         {
-            float dist = (buggy.transform.position - transform.position).sqrMagnitude;
-            if (dist > radius * radius && buggy.transform.position.y > lowBound && buggy.transform.position.y < highBound)
+            float dist = (buggy.buggy.transform.position - transform.position).sqrMagnitude;
+            if (dist > radius * radius && buggy.buggy.transform.position.y > lowBound && buggy.buggy.transform.position.y < highBound)
             {
-                buggy.Reset();
+                buggy.ResetBuggy();
+                Debug.Log("reset");
             }
         }
     }

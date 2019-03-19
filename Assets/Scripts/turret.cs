@@ -10,11 +10,8 @@ public class turret : MonoBehaviour
 
     public float againstGrav;
 
-    public SteamVR_ActionSet actionSet;
-
     public SteamVR_Action_Single gripSqueeze;
     public SteamVR_Action_Single pinchSqueeze;
-
 
     private Rigidbody turretRigidbody;
     private Interactable interactable;
@@ -23,33 +20,7 @@ public class turret : MonoBehaviour
     {
         turretRigidbody = GetComponent<Rigidbody>();
         interactable = GetComponent<Interactable>();
-
-        interactable.onAttachedToHand += Interactable_onAttachedToHand;
-        interactable.onDetachedFromHand += Interactable_onDetachedFromHand;
     }
-
-    private void Interactable_onDetachedFromHand(Hand hand)
-    {
-        if (hand.otherHand.currentAttachedObject != null && (hand.otherHand.currentAttachedObject.GetComponent<SquishyToy>() != null || hand.otherHand.currentAttachedObject.GetComponent<turret>() != null))
-            return;
-
-        actionSet.Deactivate();
-    }
-
-    private void Interactable_onAttachedToHand(Hand hand)
-    {
-        actionSet.ActivatePrimary();
-    }
-
-    private void OnDestroy()
-    {
-        if (interactable == null)
-        {
-            interactable.onAttachedToHand -= Interactable_onAttachedToHand;
-            interactable.onDetachedFromHand -= Interactable_onDetachedFromHand;
-        }
-    }
-
     private void Update()
     {
         float grip = 0;

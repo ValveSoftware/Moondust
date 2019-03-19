@@ -24,20 +24,18 @@ public class ActionCanvasElementSingle : ActionCanvasElement
 
     public override void Update()
     {
-        bool active = CheckActive(action, actionCanvas.handType);
+        CheckActive(action, actionCanvas.handType);
 
-        if (active)
+        float actionAxis = action.GetAxis(actionCanvas.handType);
+
+        if (elementAxis != actionAxis || initialAxisSet == false)
         {
-            float actionAxis = action.GetAxis(actionCanvas.handType);
+            SetFillAmount(actionAxis);
 
-            if (elementAxis != actionAxis || initialAxisSet == false)
-            {
-                SetFillAmount(actionAxis);
+            elementAxis = actionAxis;
 
-                elementAxis = actionAxis;
-
-                initialAxisSet = true;
-            }
+            initialAxisSet = true;
         }
+
     }
 }

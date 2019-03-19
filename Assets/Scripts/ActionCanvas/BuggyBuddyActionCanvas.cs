@@ -11,6 +11,7 @@ public class BuggyBuddyActionCanvas : ActionCanvasBase
     public ActionCanvasElementBoolean reset;
     public ActionCanvasElementSingle throttle;
     public ActionCanvasElementVector2 steer;
+    public ActionCanvasElementBoolean menu;
 
     protected override void Awake()
     {
@@ -21,6 +22,7 @@ public class BuggyBuddyActionCanvas : ActionCanvasBase
         reset.Initialize(this);
         throttle.Initialize(this);
         steer.Initialize(this);
+        menu.Initialize(this);
     }
 
     protected override void Update()
@@ -32,5 +34,6 @@ public class BuggyBuddyActionCanvas : ActionCanvasBase
         reset.Update();
         throttle.Update();
         steer.Update();
+        menu.Update();
     }
 }

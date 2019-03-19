@@ -9,8 +9,7 @@ public class grenadeShooter : MonoBehaviour
     public GameObject prefab;
 
     public Interactable interactable;
-
-    public SteamVR_ActionSet actionSet;
+    
     public SteamVR_Action_Boolean shootAction;
 
     public float fireVelocity;
@@ -22,31 +21,6 @@ public class grenadeShooter : MonoBehaviour
     {
         if (interactable == null)
             interactable = this.GetComponentInParent<Interactable>();
-
-        interactable.onAttachedToHand += Interactable_onAttachedToHand;
-        interactable.onDetachedFromHand += Interactable_onDetachedFromHand;
-    }
-
-    private void OnDestroy()
-    {
-        if (interactable == null)
-        {
-            interactable.onAttachedToHand -= Interactable_onAttachedToHand;
-            interactable.onDetachedFromHand -= Interactable_onDetachedFromHand;
-        }
-    }
-
-    private void Interactable_onDetachedFromHand(Hand hand)
-    {
-        if (hand.otherHand.currentAttachedObject != null && hand.otherHand.currentAttachedObject.GetComponent<grenadeShooter>() != null)
-            return;
-
-        actionSet.Deactivate();
-    }
-
-    private void Interactable_onAttachedToHand(Hand hand)
-    {
-        actionSet.ActivatePrimary();
     }
 
     private void Update()

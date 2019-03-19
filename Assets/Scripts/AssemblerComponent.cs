@@ -58,6 +58,12 @@ namespace Assembler
         private AssemblerPoint attachPoint;
         private AssemblerPoint m_attachPt;
 
+        private Hand holdingHand;
+
+        public delegate void OnAttachedDelegate(Hand hand);
+
+        public event OnAttachedDelegate onAttached;
+
         private void Start()
         {
             if (faker)
@@ -125,18 +131,15 @@ namespace Assembler
                         Detach();
                 }
 
-                if (interactable.attachedToHand) // If i'm being held
+                if (interactable.attachedToHand != null) // If i'm being held
                 {
+                    holdingHand = interactable.attachedToHand;
+
                     if (connected)
                     {
                         if (dismantle)
                         {
                             Detach();
-                        }
-                        else
-                        {
-                            //KnucklesPhysicalInteraction kpi = ki.heldBy;
-                            //kpi.ForceGrab(coreComp.ki);
                         }
                     }
 
@@ -144,8 +147,6 @@ namespace Assembler
                     PointHitCheck[] hits = new PointHitCheck[points.Length];
                     for (int i = 0; i < points.Length; i++)
                     {
-
-
                         PointHitCheck hit;
                         if (pointColliders[i].CheckForPoints(out hit)) // check if each point is touching another object's
                         {
@@ -176,6 +177,8 @@ namespace Assembler
 
         private void Attach()
         {
+            onAttached.Invoke(holdingHand);
+
             if (previewHolo)
             {
                 previewHolo.SetActive(false);
@@ -364,6 +367,7 @@ namespace Assembler
         {
             Vector3 oldpos = transform.position;
             Quaternion oldrot = transform.rotation;
+
             SnapIn(transform, false);
 
             if (previewMaterial == null)
@@ -371,10 +375,58 @@ namespace Assembler
 
             Matrix4x4 matrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.lossyScale);
             Graphics.DrawMesh(GetComponent<MeshFilter>().mesh, matrix, previewMaterial, 0);
+
             transform.position = oldpos;
             transform.rotation = oldrot;
         }
 
+        private void SnapIn(Transform snapTransform, bool doSnap = true)
+        {
+            Transform tempObject = new GameObject().transform;
+            tempObject.position = snapTransform.position;
+            tempObject.rotation = snapTransform.rotation;
+            tempObject.parent = attachPoint.transform;
+
+            Vector3 hackyRounding = tempObject.localEulerAngles;
+            hackyRounding.x = Mathf.Round(hackyRounding.x / 90) * 90;
+            hackyRounding.y = Mathf.Round(hackyRounding.y / 90) * 90;
+            hackyRounding.z = Mathf.Round(hackyRounding.z / 90) * 90;
+            tempObject.localEulerAngles = hackyRounding;
+
+            snapTransform.eulerAngles = tempObject.eulerAngles;
+
+            Destroy(tempObject.gameObject);
+            
+            Vector3 pDiff = attachPoint.transform.position - m_attachPt.transform.position;
+            snapTransform.position += pDiff;
+
+            if (doSnap)
+            {
+                DestroyImmediate(interactable.GetComponent<Throwable>());
+                DestroyImmediate(interactable.GetComponent<VelocityEstimator>());
+                DestroyImmediate(interactable.GetComponent<Rigidbody>());
+
+                Rigidbody parentRigidbody = snapTransform.parent.GetComponentInParent<Rigidbody>();
+
+                var joints = snapTransform.GetComponentsInChildren<Joint>();
+                foreach (var joint in joints)
+                {
+                    joint.GetComponent<Rigidbody>().rotation = snapTransform.rotation;
+                    joint.connectedBody = parentRigidbody;
+                    joint.autoConfigureConnectedAnchor = false;
+                    joint.anchor = Vector3.zero;
+                    joint.connectedAnchor = parentRigidbody.transform.InverseTransformPoint(joint.transform.position);
+                    StartCoroutine(DoSetBreakForce(joint));
+                }
+
+                Destroy(interactable);
+
+                //Interactable item = t.GetComponentInParent<Interactable>();
+                //item.UpdateColliders(); //give the parent this item's colliders
+            }
+        }
+
+        /*
         private void SnapIn(Transform snapTransform, bool doSnap = true)
         {
             Vector3 initialPosition = snapTransform.position;
@@ -443,6 +495,7 @@ namespace Assembler
                 //item.UpdateColliders(); //give the parent this item's colliders
             }
         }
+        */
 
 
         private IEnumerator DoSetBreakForce(Joint joint)

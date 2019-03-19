@@ -1,26 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class trackCam : MonoBehaviour
+namespace Valve.VR.InteractionSystem.Sample
 {
-    public float speed;
-
-    public bool negative;
-
-    private void Update()
+    public class trackCam : MonoBehaviour
     {
-        Vector3 look = Camera.main.transform.position - transform.position;
-        if (negative)
+        public float speed;
+
+        public bool negative;
+
+        void Update()
         {
-            look = -look;
-        }
-        if (speed == 0)
-        {
-            transform.rotation = Quaternion.LookRotation(look);
-        }
-        else
-        {
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(look), speed * Time.deltaTime);
+            Vector3 look = Camera.main.transform.position - transform.position;
+            if (negative)
+            {
+                look = -look;
+            }
+            if (speed == 0)
+            {
+                transform.rotation = Quaternion.LookRotation(look);
+            }
+            else
+            {
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(look), speed * Time.deltaTime);
+            }
         }
     }
 }

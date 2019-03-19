@@ -25,6 +25,8 @@ Shader "Valve/Wormhole"
             }
 
 			Blend SrcAlpha OneMinusSrcAlpha // Alpha blending
+
+			Cull Off
             
             CGPROGRAM
 

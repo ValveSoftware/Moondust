@@ -2,35 +2,37 @@
 using System.Collections;
 using Valve.VR;
 
-public class AmbientSound : MonoBehaviour
-{
-    public float fadeintime;
-    public bool fadeblack = false;
+public class AmbientSound : MonoBehaviour {
+	AudioSource s;
 
-    private float volume;
-    private AudioSource audiosource;
-    private float fadeTime;
+	public float fadeintime;
 
-    private void Start()
-    {
-        AudioListener.volume = 1;
-        audiosource = GetComponent<AudioSource>();
-        audiosource.time = Random.Range(0, audiosource.clip.length);
-        if (fadeintime > 0)
-            fadeTime = 0;
+	float t;
 
-        volume = audiosource.volume;
+	public bool fadeblack = false;
 
-        SteamVR_Fade.Start(Color.black, 0);
-        SteamVR_Fade.Start(Color.clear, 7);
-    }
+	float vol;
 
-    private void Update()
-    {
-        if (fadeintime > 0 && fadeTime < 1)
-        {
-            fadeTime += Time.deltaTime / fadeintime;
-            audiosource.volume = fadeTime * volume;
-        }
-    }
+	// Use this for initialization
+	void Start () {
+		AudioListener.volume = 1;
+		s = GetComponent<AudioSource> ();
+		s.time = Random.Range (0, s.clip.length);
+		if (fadeintime > 0)
+			t = 0;
+
+		vol = s.volume;
+
+		SteamVR_Fade.Start(Color.black, 0);
+		SteamVR_Fade.Start(Color.clear, 7);
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		if (fadeintime > 0&&t<1) {
+			t += Time.deltaTime / fadeintime;
+			s.volume = t * vol;
+		}
+	
+	}
 }

@@ -14,57 +14,121 @@ namespace Valve.VR
     using UnityEngine;
     
     
-    public partial class SteamVR_Input
+    public partial class SteamVR_Actions
     {
         
-        public static Valve.VR.SteamVR_Input_ActionSet_default _default;
+        private static SteamVR_Input_ActionSet_default p__default;
         
-        public static Valve.VR.SteamVR_Input_ActionSet_rock rock;
+        private static SteamVR_Input_ActionSet_rock p_rock;
         
-        public static Valve.VR.SteamVR_Input_ActionSet_buggybuddy buggybuddy;
+        private static SteamVR_Input_ActionSet_buggybuddy p_buggybuddy;
         
-        public static Valve.VR.SteamVR_Input_ActionSet_space space;
+        private static SteamVR_Input_ActionSet_space p_space;
         
-        public static Valve.VR.SteamVR_Input_ActionSet_grenade grenade;
+        private static SteamVR_Input_ActionSet_grenade p_grenade;
         
-        public static Valve.VR.SteamVR_Input_ActionSet_squeezable squeezable;
+        private static SteamVR_Input_ActionSet_squeezable p_squeezable;
         
-        public static Valve.VR.SteamVR_Input_ActionSet_teleporting teleporting;
+        private static SteamVR_Input_ActionSet_teleporting p_teleporting;
         
-        public static Valve.VR.SteamVR_Input_ActionSet_gun gun;
+        private static SteamVR_Input_ActionSet_gun p_gun;
         
-        public static void Dynamic_InitializeActionSets()
+        private static SteamVR_Input_ActionSet_raw p_raw;
+        
+        public static SteamVR_Input_ActionSet_default _default
         {
-            SteamVR_Input._default.Initialize();
-            SteamVR_Input.rock.Initialize();
-            SteamVR_Input.buggybuddy.Initialize();
-            SteamVR_Input.space.Initialize();
-            SteamVR_Input.grenade.Initialize();
-            SteamVR_Input.squeezable.Initialize();
-            SteamVR_Input.teleporting.Initialize();
-            SteamVR_Input.gun.Initialize();
+            get
+            {
+                return SteamVR_Actions.p__default.GetCopy <SteamVR_Input_ActionSet_default>();
+            }
         }
         
-        public static void Dynamic_InitializeInstanceActionSets()
+        public static SteamVR_Input_ActionSet_rock rock
         {
-            Valve.VR.SteamVR_Input._default = ((SteamVR_Input_ActionSet_default)(SteamVR_Input_References.GetActionSet("_default")));
-            Valve.VR.SteamVR_Input.rock = ((SteamVR_Input_ActionSet_rock)(SteamVR_Input_References.GetActionSet("rock")));
-            Valve.VR.SteamVR_Input.buggybuddy = ((SteamVR_Input_ActionSet_buggybuddy)(SteamVR_Input_References.GetActionSet("buggybuddy")));
-            Valve.VR.SteamVR_Input.space = ((SteamVR_Input_ActionSet_space)(SteamVR_Input_References.GetActionSet("space")));
-            Valve.VR.SteamVR_Input.grenade = ((SteamVR_Input_ActionSet_grenade)(SteamVR_Input_References.GetActionSet("grenade")));
-            Valve.VR.SteamVR_Input.squeezable = ((SteamVR_Input_ActionSet_squeezable)(SteamVR_Input_References.GetActionSet("squeezable")));
-            Valve.VR.SteamVR_Input.teleporting = ((SteamVR_Input_ActionSet_teleporting)(SteamVR_Input_References.GetActionSet("teleporting")));
-            Valve.VR.SteamVR_Input.gun = ((SteamVR_Input_ActionSet_gun)(SteamVR_Input_References.GetActionSet("gun")));
+            get
+            {
+                return SteamVR_Actions.p_rock.GetCopy <SteamVR_Input_ActionSet_rock>();
+            }
+        }
+        
+        public static SteamVR_Input_ActionSet_buggybuddy buggybuddy
+        {
+            get
+            {
+                return SteamVR_Actions.p_buggybuddy.GetCopy <SteamVR_Input_ActionSet_buggybuddy>();
+            }
+        }
+        
+        public static SteamVR_Input_ActionSet_space space
+        {
+            get
+            {
+                return SteamVR_Actions.p_space.GetCopy <SteamVR_Input_ActionSet_space>();
+            }
+        }
+        
+        public static SteamVR_Input_ActionSet_grenade grenade
+        {
+            get
+            {
+                return SteamVR_Actions.p_grenade.GetCopy <SteamVR_Input_ActionSet_grenade>();
+            }
+        }
+        
+        public static SteamVR_Input_ActionSet_squeezable squeezable
+        {
+            get
+            {
+                return SteamVR_Actions.p_squeezable.GetCopy <SteamVR_Input_ActionSet_squeezable>();
+            }
+        }
+        
+        public static SteamVR_Input_ActionSet_teleporting teleporting
+        {
+            get
+            {
+                return SteamVR_Actions.p_teleporting.GetCopy <SteamVR_Input_ActionSet_teleporting>();
+            }
+        }
+        
+        public static SteamVR_Input_ActionSet_gun gun
+        {
+            get
+            {
+                return SteamVR_Actions.p_gun.GetCopy <SteamVR_Input_ActionSet_gun>();
+            }
+        }
+        
+        public static SteamVR_Input_ActionSet_raw raw
+        {
+            get
+            {
+                return SteamVR_Actions.p_raw.GetCopy <SteamVR_Input_ActionSet_raw>();
+            }
+        }
+        
+        private static void StartPreInitActionSets()
+        {
+            SteamVR_Actions.p__default = ((SteamVR_Input_ActionSet_default)(SteamVR_ActionSet.Create <SteamVR_Input_ActionSet_default>("/actions/default")));
+            SteamVR_Actions.p_rock = ((SteamVR_Input_ActionSet_rock)(SteamVR_ActionSet.Create <SteamVR_Input_ActionSet_rock>("/actions/rock")));
+            SteamVR_Actions.p_buggybuddy = ((SteamVR_Input_ActionSet_buggybuddy)(SteamVR_ActionSet.Create <SteamVR_Input_ActionSet_buggybuddy>("/actions/buggybuddy")));
+            SteamVR_Actions.p_space = ((SteamVR_Input_ActionSet_space)(SteamVR_ActionSet.Create <SteamVR_Input_ActionSet_space>("/actions/space")));
+            SteamVR_Actions.p_grenade = ((SteamVR_Input_ActionSet_grenade)(SteamVR_ActionSet.Create <SteamVR_Input_ActionSet_grenade>("/actions/grenade")));
+            SteamVR_Actions.p_squeezable = ((SteamVR_Input_ActionSet_squeezable)(SteamVR_ActionSet.Create <SteamVR_Input_ActionSet_squeezable>("/actions/squeezable")));
+            SteamVR_Actions.p_teleporting = ((SteamVR_Input_ActionSet_teleporting)(SteamVR_ActionSet.Create <SteamVR_Input_ActionSet_teleporting>("/actions/teleporting")));
+            SteamVR_Actions.p_gun = ((SteamVR_Input_ActionSet_gun)(SteamVR_ActionSet.Create <SteamVR_Input_ActionSet_gun>("/actions/gun")));
+            SteamVR_Actions.p_raw = ((SteamVR_Input_ActionSet_raw)(SteamVR_ActionSet.Create <SteamVR_Input_ActionSet_raw>("/actions/raw")));
             Valve.VR.SteamVR_Input.actionSets = new Valve.VR.SteamVR_ActionSet[]
             {
-                    Valve.VR.SteamVR_Input._default,
-                    Valve.VR.SteamVR_Input.rock,
-                    Valve.VR.SteamVR_Input.buggybuddy,
-                    Valve.VR.SteamVR_Input.space,
-                    Valve.VR.SteamVR_Input.grenade,
-                    Valve.VR.SteamVR_Input.squeezable,
-                    Valve.VR.SteamVR_Input.teleporting,
-                    Valve.VR.SteamVR_Input.gun};
+                    SteamVR_Actions._default,
+                    SteamVR_Actions.rock,
+                    SteamVR_Actions.buggybuddy,
+                    SteamVR_Actions.space,
+                    SteamVR_Actions.grenade,
+                    SteamVR_Actions.squeezable,
+                    SteamVR_Actions.teleporting,
+                    SteamVR_Actions.gun,
+                    SteamVR_Actions.raw};
         }
     }
 }

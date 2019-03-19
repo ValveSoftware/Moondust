@@ -46,7 +46,7 @@ float4 WormholeShading( float3 vPositionWs, float3 vNormalWs )
 
 	float3 vWormholeCenterWs = mul( unity_ObjectToWorld, float4( 0.0, 0.0, 0.0, 1.0 ) ).xyz;
 	float3 vCameraToPositionDirWs = normalize( vPositionWs.xyz - _WorldSpaceCameraPos.xyz );
-	float flNDotV = saturate( dot( -vCameraToPositionDirWs.xyz, vNormalWs.xyz ) );
+	float flNDotV = ( dot( -vCameraToPositionDirWs.xyz, vNormalWs.xyz ) );
 
 	// lend between interior reflection ( inverted cubemap ) and plain view direction lookup
 	// Giving wormhole a semi-solid semi-portal type look
@@ -59,6 +59,12 @@ float4 WormholeShading( float3 vPositionWs, float3 vNormalWs )
 	flEdgeHighlightStrength *= flEdgeHighlightStrength * flEdgeHighlightStrength;
 			
 	float4 vWormholeTexel = texCUBE( _Cubemap, vWormholeDirWs.xyz ).rgba;
+
+	//render interior if head inside
+	//return flNDotV;
+	if(flNDotV<-0.6){
+	return vWormholeTexel;
+	}
 
 	float4 vOutputColor;
 	vOutputColor.rgb = lerp( vWormholeTexel.rgb, _OutlineColor.rgb, flEdgeHighlightStrength );

@@ -24,22 +24,19 @@ public class ActionCanvasElementBoolean : ActionCanvasElement
 
     public override void Update()
     {
-        bool active = CheckActive(action, actionCanvas.handType);
+        CheckActive(action, actionCanvas.handType);
 
-        if (active)
+        bool actionState = action.GetState(actionCanvas.handType);
+
+        if (elementState != actionState || initialStateSet == false)
         {
-            bool actionState = action.GetState(actionCanvas.handType);
+            Color newColor = actionState ? actionCanvas.onColor : actionCanvas.offColor;
 
-            if (elementState != actionState || initialStateSet == false)
-            {
-                Color newColor = actionState ? actionCanvas.onColor : actionCanvas.offColor;
+            SetFillColor(newColor);
 
-                SetFillColor(newColor);
+            elementState = actionState;
 
-                elementState = actionState;
-
-                initialStateSet = true;
-            }
+            initialStateSet = true;
         }
     }
 }

@@ -1,5 +1,6 @@
 {
-   "app_key" : "887260",
+   "alias_info" : {},
+   "app_key" : "application.generated.unity.moondust.exe",
    "bindings" : {
       "/actions/buggybuddy" : {
          "sources" : [
@@ -80,28 +81,6 @@
                },
                "mode" : "button",
                "path" : "/user/hand/right/input/b"
-            }
-         ]
-      },
-      "/actions/teleporting" : {
-         "sources" : [
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/teleporting/in/Teleport"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/trackpad"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/teleporting/in/Teleport"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/trackpad"
             }
          ]
       },
@@ -189,6 +168,298 @@
                   "force_release_threshold" : "0.01"
                },
                "path" : "/user/hand/right/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/interactui"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/interactui"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/menu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/b"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/menu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/b"
+            }
+         ]
+      },
+      "/actions/grenade" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/grenade/in/PrimeGrenade"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.65",
+                  "click_deactivate_threshold" : "0.6",
+                  "force_input" : "force"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/grenade/in/PrimeGrenade"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.65",
+                  "click_deactivate_threshold" : "0.6",
+                  "force_input" : "force"
+               },
+               "path" : "/user/hand/right/input/grip"
+            }
+         ]
+      },
+      "/actions/gun" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/gun/in/Fire"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/gun/in/Fire"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/trigger"
+            }
+         ]
+      },
+      "/actions/raw" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "touch" : {
+                     "output" : "/actions/raw/in/ATouch"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/a"
+            },
+            {
+               "inputs" : {
+                  "touch" : {
+                     "output" : "/actions/raw/in/ATouch"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/a"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/APress"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/a"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/APress"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/a"
+            },
+            {
+               "inputs" : {
+                  "touch" : {
+                     "output" : "/actions/raw/in/BTouch"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/b"
+            },
+            {
+               "inputs" : {
+                  "touch" : {
+                     "output" : "/actions/raw/in/BTouch"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/b"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/BPress"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/b"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/BPress"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/b"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/TouchpadPress"
+                  },
+                  "position" : {
+                     "output" : "/actions/raw/in/TouchpadAxis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/raw/in/TouchpadTouch"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/TouchpadPress"
+                  },
+                  "position" : {
+                     "output" : "/actions/raw/in/TouchpadAxis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/raw/in/TouchpadTouch"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/ThumbstickPress"
+                  },
+                  "position" : {
+                     "output" : "/actions/raw/in/ThumbstickAxis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/raw/in/ThumbstickTouch"
+                  }
+               },
+               "mode" : "joystick",
+               "path" : "/user/hand/left/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/ThumbstickPress"
+                  },
+                  "position" : {
+                     "output" : "/actions/raw/in/ThumbstickAxis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/raw/in/ThumbstickTouch"
+                  }
+               },
+               "mode" : "joystick",
+               "path" : "/user/hand/right/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/TriggerPress"
+                  },
+                  "pull" : {
+                     "output" : "/actions/raw/in/TriggerAxis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/raw/in/TriggerTouch"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/TriggerPress"
+                  },
+                  "pull" : {
+                     "output" : "/actions/raw/in/TriggerAxis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/raw/in/TriggerTouch"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/raw/in/GripForceAxis"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/raw/in/GripForceAxis"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/raw/in/TopForceAxis"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/raw/in/TopForceAxis"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/right/input/trackpad"
             }
          ]
       },
@@ -344,60 +615,7 @@
             }
          ]
       },
-    "/actions/grenade": {
-      "sources": [
-        {
-          "inputs": {
-            "click": {
-              "output": "/actions/grenade/in/PrimeGrenade"
-            }
-          },
-          "mode": "button",
-          "parameters": {
-            "click_activate_threshold": "0.65",
-            "click_deactivate_threshold": "0.6",
-            "force_input": "force"
-          },
-          "path": "/user/hand/left/input/grip"
-        },
-        {
-          "inputs": {
-            "click": {
-              "output": "/actions/grenade/in/PrimeGrenade"
-            }
-          },
-          "mode": "button",
-          "parameters": {
-            "click_activate_threshold": "0.65",
-            "click_deactivate_threshold": "0.6",
-            "force_input": "force"
-          },
-          "path": "/user/hand/right/input/grip"
-        }
-      ]
-    },
-    "/actions/gun" : {
-         "sources" : [
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/gun/in/Fire"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/gun/in/Fire"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/trigger"
-            }
-         ]
-      },"/actions/squeezable" : {
+      "/actions/squeezable" : {
          "sources" : [
             {
                "inputs" : {
@@ -436,9 +654,33 @@
                "path" : "/user/hand/right/input/trackpad"
             }
          ]
+      },
+      "/actions/teleporting" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/teleporting/in/Teleport"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/teleporting/in/Teleport"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/trackpad"
+            }
+         ]
       }
    },
    "controller_type" : "knuckles",
    "description" : "",
-   "name" : "knuckles_default"
+   "name" : "knuckles_default",
+   "options" : {},
+   "simulated_actions" : []
 }

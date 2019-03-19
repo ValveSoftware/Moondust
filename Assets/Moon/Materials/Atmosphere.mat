@@ -4,10 +4,11 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Atmosphere
-  m_Shader: {fileID: 4800000, guid: 3ed9e077a0a3d3e4ba0dff537f68d344, type: 3}
+  m_Shader: {fileID: 4800000, guid: c87aa17ca2a0e404f9dadacfea387abc, type: 3}
   m_ShaderKeywords: _ALPHABLEND_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -71,6 +72,7 @@ Material:
     - _DistortionStrengthScaled: 0
     - _DstBlend: 1
     - _EmissionEnabled: 0
+    - _Exp: 1
     - _FlipbookMode: 0
     - _GlossMapScale: 1
     - _Glossiness: 0

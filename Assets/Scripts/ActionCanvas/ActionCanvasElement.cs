@@ -11,6 +11,7 @@ public abstract class ActionCanvasElement
 {
     public GameObject element;
     public Image fill { get; set; }
+    public Image border { get; set; }
     public Image position { get; set; }
     public Image[] images { get; set; }
     public Text[] texts { get; set; }
@@ -42,6 +43,10 @@ public abstract class ActionCanvasElement
                 }
 
             }
+            else if (child.name == "border")
+            {
+                border = child.GetComponent<Image>();
+            }
         }
 
         images = element.GetComponentsInChildren<Image>(true);
@@ -70,9 +75,9 @@ public abstract class ActionCanvasElement
         return (images[0].color.a == opacity);
     }
 
-    protected bool CheckActive(SteamVR_Action_In action, SteamVR_Input_Sources source)
+    protected virtual bool CheckActive(ISteamVR_Action_In action, SteamVR_Input_Sources source)
     {
-        bool actionActive = action.GetActive(source) && action.actionSet.IsActive();
+        bool actionActive = action.GetActive(source) && action.actionSet.IsActive(source);
         
         if (elementActive != actionActive || initialOpacitySet == false)
         {
@@ -91,6 +96,11 @@ public abstract class ActionCanvasElement
         fill.color = newColor;
     }
 
+    public void SetBorderColor(Color newColor)
+    {
+        border.color = newColor;
+    }
+
     public void SetFillAmount(float amount)
     {
         fill.fillAmount = amount;
@@ -98,9 +108,14 @@ public abstract class ActionCanvasElement
 
     protected virtual void SetPosition(Vector2 axis)
     {
-        axis.x *= -fill.preferredWidth;
-        axis.y *= fill.preferredHeight;
-        
+        axis.x *= -((fill.rectTransform.rect.width/2) - 30);
+        axis.y *= ((fill.rectTransform.rect.height/2) - 30);
+
+        if (position == null)
+        {
+            Debug.Log("No position", element);
+            return;
+        }
         position.rectTransform.localPosition = axis;
     }
 

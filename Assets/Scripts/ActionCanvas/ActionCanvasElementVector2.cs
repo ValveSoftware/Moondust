@@ -24,28 +24,25 @@ public class ActionCanvasElementVector2 : ActionCanvasElement
 
     public override void Update()
     {
-        bool active = CheckActive(action, actionCanvas.handType);
+        CheckActive(action, actionCanvas.handType);
 
-        if (active)
+        Vector2 actionAxis = action.GetAxis(actionCanvas.handType);
+
+        if (elementAxis != actionAxis || initialAxisSet == false)
         {
-            Vector2 actionAxis = action.GetAxis(actionCanvas.handType);
+            Color newColor;
+            if (actionAxis == Vector2.zero)
+                newColor = actionCanvas.offColor;
+            else
+                newColor = actionCanvas.onColor;
 
-            if (elementAxis != actionAxis || initialAxisSet == false)
-            {
-                Color newColor;
-                if (actionAxis == Vector2.zero)
-                    newColor = actionCanvas.offColor;
-                else
-                    newColor = actionCanvas.onColor;
+            SetFillColor(newColor);
 
-                SetFillColor(newColor);
+            SetPosition(actionAxis);
 
-                SetPosition(actionAxis);
+            elementAxis = actionAxis;
 
-                elementAxis = actionAxis;
-
-                initialAxisSet = true;
-            }
+            initialAxisSet = true;
         }
     }
 }

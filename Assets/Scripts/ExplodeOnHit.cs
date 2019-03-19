@@ -12,7 +12,7 @@ public class ExplodeOnHit : MonoBehaviour
     {
         if (hitMask == (hitMask | (1 << collider.gameObject.layer)))
         {
-            Instantiate(explodee, transform.position, Quaternion.identity);
+            Instantiate(explodee, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }

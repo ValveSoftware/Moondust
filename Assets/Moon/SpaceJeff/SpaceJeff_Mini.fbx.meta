@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: e89d805128beaae42bea0d40803e4c25
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body
+    100002: foot.L
+    100004: foot.R
+    100006: forearm.L
+    100008: forearm.R
+    100010: hand.L
+    100012: hand.L_end
+    100014: hand.R
+    100016: hand.R_end
+    100018: Head
+    100020: heel.02.L
+    100022: heel.02.L_end
+    100024: heel.02.R
+    100026: heel.02.R_end
+    100028: metarig
+    100030: pelvis.L
+    100032: pelvis.L_end
+    100034: pelvis.R
+    100036: pelvis.R_end
+    100038: shin.L
+    100040: shin.R
+    100042: shoulder.L
+    100044: shoulder.R
+    100046: //RootNode
+    100048: SpaceSuit
+    100050: spine
+    100052: spine.001
+    100054: spine.005
+    100056: spine.006
+    100058: spine.006_end
+    100060: thigh.L
+    100062: thigh.R
+    100064: toe.L
+    100066: toe.L_end
+    100068: toe.R
+    100070: toe.R_end
+    100072: upper_arm.L
+    100074: upper_arm.R
+    400000: Body
+    400002: foot.L
+    400004: foot.R
+    400006: forearm.L
+    400008: forearm.R
+    400010: hand.L
+    400012: hand.L_end
+    400014: hand.R
+    400016: hand.R_end
+    400018: Head
+    400020: heel.02.L
+    400022: heel.02.L_end
+    400024: heel.02.R
+    400026: heel.02.R_end
+    400028: metarig
+    400030: pelvis.L
+    400032: pelvis.L_end
+    400034: pelvis.R
+    400036: pelvis.R_end
+    400038: shin.L
+    400040: shin.R
+    400042: shoulder.L
+    400044: shoulder.R
+    400046: //RootNode
+    400048: SpaceSuit
+    400050: spine
+    400052: spine.001
+    400054: spine.005
+    400056: spine.006
+    400058: spine.006_end
+    400060: thigh.L
+    400062: thigh.R
+    400064: toe.L
+    400066: toe.L_end
+    400068: toe.R
+    400070: toe.R_end
+    400072: upper_arm.L
+    400074: upper_arm.R
+    2100000: JoeJeffSpacesuit
+    2100002: JoeJeffSpacesuit_Visor
+    2100004: JoeJeff
+    4300000: SpaceSuit
+    4300002: Body
+    7400000: metarig|metarig.001|metarig|metarigAction|metarig|metarigAction
+    7400002: metarig|Plane|metarig|metarigAction|metarig|metarigAction
+    9500000: //RootNode
+    13700000: Body
+    13700002: SpaceSuit
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JoeJeff
+    second: {fileID: 2100000, guid: f907eedc9055ce94a9c7b225ddf80d57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JoeJeffSpacesuit
+    second: {fileID: 2100000, guid: 0205c12c10894c54a90cca729bad70c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JoeJeffSpacesuit_Visor
+    second: {fileID: 2100000, guid: fc4b36cd989972b4daa3c903ef535c83, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

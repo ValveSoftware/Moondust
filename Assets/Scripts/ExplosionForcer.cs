@@ -18,6 +18,12 @@ public class ExplosionForcer : MonoBehaviour
         Explode();
     }
 
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, radius);
+    }
+
     private void Explode()
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
@@ -37,8 +43,8 @@ public class ExplosionForcer : MonoBehaviour
 
         foreach (Rigidbody rigidbody in rigidbodyList)
         {
-            rigidbody.AddExplosionForce(power, transform.position, radius, 0.6f);
-            rigidbody.SendMessage("Exploded", SendMessageOptions.DontRequireReceiver);
+            rigidbody.AddExplosionForce(power * 2, transform.position, radius, 0.6f);
+            rigidbody.SendMessage("Explosion", this, SendMessageOptions.DontRequireReceiver);
         }
     }
 }

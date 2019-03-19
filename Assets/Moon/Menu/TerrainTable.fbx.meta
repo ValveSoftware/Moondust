@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: ab84b70cf6e08404798e516cc6a55b37
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: TerrainMesh
+    100002: TerrainMesh.000
+    100004: //RootNode
+    100006: Table
+    100008: HoloTerrain
+    100010: HoloBorder
+    100012: spin
+    100014: Spinners
+    100016: spin.001
+    100018: spin.002
+    100020: text
+    400000: TerrainMesh
+    400002: TerrainMesh.000
+    400004: //RootNode
+    400006: Table
+    400008: HoloTerrain
+    400010: HoloBorder
+    400012: spin
+    400014: Spinners
+    400016: spin.001
+    400018: spin.002
+    400020: text
+    2100000: canyon
+    2100002: Table
+    2100004: holoTerrain
+    2100006: HoloBorder
+    2100008: HoloSpinner
+    2100010: MenuText
+    2300000: TerrainMesh
+    2300002: TerrainMesh.000
+    2300004: Table
+    2300006: HoloTerrain
+    2300008: HoloBorder
+    2300010: spin
+    2300012: spin.001
+    2300014: spin.002
+    2300016: text
+    3300000: TerrainMesh
+    3300002: TerrainMesh.000
+    3300004: Table
+    3300006: HoloTerrain
+    3300008: HoloBorder
+    3300010: spin
+    3300012: spin.001
+    3300014: spin.002
+    3300016: text
+    4300000: TerrainMesh
+    4300002: TerrainMesh.000
+    4300004: Table
+    4300006: HoloTerrain
+    4300008: HoloBorder
+    4300010: spin
+    4300012: spin.001
+    4300014: spin.002
+    4300016: text
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HoloBorder
+    second: {fileID: 2100000, guid: ad1d2675a75cd134187eb021a7e3756c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HoloSpinner
+    second: {fileID: 2100000, guid: 5c2ac517ca600c949b90dc532fb1893e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MenuText
+    second: {fileID: 2100000, guid: d420575c678208d4d806159c29b4dc61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Table
+    second: {fileID: 2100000, guid: 74bd57d372789d941b753be655b3141b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: canyon
+    second: {fileID: 2100000, guid: 3bc98155512027b41b88b5e310fb7a7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: holoTerrain
+    second: {fileID: 2100000, guid: 61799466ebcb5ec4c9bf8045eaa6509c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

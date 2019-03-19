@@ -30,15 +30,11 @@ namespace Valve.VR.InteractionSystem
 		}
 
 
-        //-------------------------------------------------
-        void Start()
-        {
-            player = Player.instance;
-            if (Debug.isDebugBuild == false)
-            {
-                Destroy(this);
-            }
-        }
+		//-------------------------------------------------
+		void Start()
+		{
+			player = Player.instance;
+		}
 
 
 		//-------------------------------------------------

@@ -6,6 +6,7 @@ namespace Valve.VR.InteractionSystem.Sample
 {
     public class JoeJeff : MonoBehaviour
     {
+
         public float animationSpeed;
 
         public float jumpVelocity;
@@ -187,7 +188,6 @@ namespace Valve.VR.InteractionSystem.Sample
         }
 
 
-
         private void HandleGroundedMovement(bool jump)
         {
             // check whether conditions are right to allow a jump:
@@ -198,7 +198,7 @@ namespace Valve.VR.InteractionSystem.Sample
         }
 
         private float jumpTimer;
-        private void Jump()
+        public void Jump()
         {
             isGrounded = false;
             jumpTimer = 0.1f;
@@ -208,5 +208,6 @@ namespace Valve.VR.InteractionSystem.Sample
             velocity.y = jumpVelocity;
             rigidbody.velocity = velocity;
         }
+
     }
 }

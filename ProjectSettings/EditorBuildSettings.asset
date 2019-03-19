@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: f36d594231067774cbe6a41d67ffff78
+  - enabled: 1
     path: Assets/Scenes/RockCrush.unity
     guid: bda31628c1aa3ed4788ee539b1ab1872
   - enabled: 1
@@ -23,3 +26,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ThrowingPlus.unity
     guid: af219955f3d166f48a7dabb7d5679c06
+  m_configObjects: {}

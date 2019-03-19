@@ -39,7 +39,7 @@ public class Grenader : MonoBehaviour
 
     private IEnumerator DoSpawnNades(int numberToSpawn, float timeBetweenSpawns)
     {
-        port.shootForce = portForce * -Physics.gravity.y;
+        port.shootForce = portForce * (-Physics.gravity.y+3);
         for (int spawnIndex = 0; spawnIndex < numberToSpawn; spawnIndex++)
         {
             GameObject spawnPrefab;

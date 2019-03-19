@@ -18,8 +18,6 @@ public class MoonRock : MonoBehaviour
     [System.NonSerialized]
     public bool crushable = true;
 
-    public SteamVR_ActionSet setToActivate;
-
     public SteamVR_Action_Boolean actionCrush;
     public SteamVR_Action_Single actionSqueeze;
 
@@ -32,22 +30,12 @@ public class MoonRock : MonoBehaviour
         renderers = GetComponentsInChildren<Renderer>();
         interactable = GetComponent<Interactable>();
         rigidbody = interactable.GetComponent<Rigidbody>();
-        
-        interactable.onDetachedFromHand += Interactable_onDetachedFromHand;
-    }
-
-    private void Interactable_onDetachedFromHand(Hand hand)
-    {
-        setToActivate.Deactivate();
     }
 
     private void Update()
     {
         if (interactable.attachedToHand == null || crushable == false)
             return;
-
-        if (setToActivate.IsActive() == false)
-            setToActivate.ActivatePrimary();
 
         SteamVR_Input_Sources hand = interactable.attachedToHand.handType;
 
